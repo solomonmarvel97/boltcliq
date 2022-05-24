@@ -37,6 +37,8 @@ video {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .hero:before {
@@ -98,11 +100,12 @@ video {
     font-size: 47px;
   }
 
-  .hero .container {
-    width: 95%;
+  .hero p {
+    width: 90%;
   }
 
-  .hero .container > p {
+  .hero .container {
+    width: 95%;
   }
 }
 </style>
