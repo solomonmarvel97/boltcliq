@@ -3,7 +3,7 @@
   <section class="mt-5 mb-5">
     <div class="processes">
       <div class="">
-        <span> OUR RESEARCH PROCESS </span>
+        <span>RESEARCH PROCESS </span>
         <div class="container">
           <h1>Identify</h1>
           <h1>Formulate</h1>
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="">
-        <span> OUR DESIGN PROCESS </span>
+        <span>DESIGN PROCESS </span>
         <div class="container">
           <h1>Empathise</h1>
           <h1>Define</h1>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="">
-        <span> OUR ENGINEERING PROCESS </span>
+        <span>ENGINEERING PROCESS </span>
         <div class="container">
           <h1>Identify</h1>
           <h1>Research</h1>
@@ -42,8 +42,8 @@
   height: 100%;
   margin-top: 5em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
   align-items: center;
 }
 
@@ -65,13 +65,12 @@ span {
 
 h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   transition: all .2s;
 }
 
 h1:hover {
   font-weight: bold;
-  font-size: 40px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;

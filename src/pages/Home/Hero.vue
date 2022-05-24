@@ -38,7 +38,7 @@ video {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center center;
+  /* object-position: center center; */
 }
 
 .hero:before {

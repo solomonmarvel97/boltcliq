@@ -57,7 +57,7 @@
 
 .hero .container .container-image {
   height: 300px;
-  width: 100%;
+  width: 60%;
   object-fit: cover;
   margin-bottom: 1em;
   border-radius: var(--border-radius);
@@ -65,9 +65,11 @@
 }
 
 .hero .container .container-image:hover {
-  height: 300px;
-  width: 70%;
-  border-radius: var(--border-radius);
+  object-fit: cover;
+  
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .hero .container .wrapper {
