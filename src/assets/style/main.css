@@ -1,0 +1,51 @@
+@import url("./fonts.css");
+@import url("./variable.css");
+@import url("./utilities.css");
+@import url("./form.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--body-font-family);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}
+
+section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+p {
+  font-family: var(--body-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+}
+
+h2 {
+  font-size: var(--heading-font-size);
+}
+
+hr {
+  border: .5px solid rgba(34, 34, 34, 0.089) !important;
+  
+}

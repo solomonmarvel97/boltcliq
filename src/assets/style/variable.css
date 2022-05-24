@@ -1,0 +1,27 @@
+:root {
+  /* colors */
+  --background: #fafafa;
+  --white: #fff;
+  --black: #222;
+  --primary: #0474ff;
+  --secondary: #222;
+
+  /* fonts */
+  --body-font-size: 15px;
+  --form-font-size: 14px;
+  --heading-font-size: 22px;
+  --heading-font-family: "Poppins", sans-serif;
+  --body-font-family: "Quicksand", sans-serif;
+  --body-font-weight: "normal";
+  --heading-font-weight: 700;
+  --hero-font-weight: "bold";
+  --hero-font-size: 47px;
+  --hero-font-weight: "bold";
+  --heading-line-height: 24px;
+  --body-line-height: 24px;
+
+  /* border */
+  --border: 1px solid #e5e7eb;
+  --border-radius: 30px;
+  --form-border-radius: 4px;
+}
