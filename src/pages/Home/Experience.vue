@@ -53,7 +53,7 @@
 }
 
 .experience .container .child:hover {
-  background-color: black;
+  background-color: #151515;
 }
 
 .experience .container .child:hover *{
@@ -69,7 +69,7 @@
 }
 
 .experience .container .child img:hover {
-  transform: rotate(20deg) scale(1.1);
+  transform: rotate(20deg) scale(1.2);
 }
 
 .experience .container .child * {

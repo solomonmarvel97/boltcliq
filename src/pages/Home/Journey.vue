@@ -2,14 +2,14 @@
   <section>
     <div class="mt-7 mb-7">
       <div class="center">
-        <h2>Our Journey so far</h2>
+        <h1>Our Journey so far</h1>
       </div>
       <div class="journey mt-5 mb-5">
         <div class="child">
-          <h3>
+          <h2>
             We're a <span>creative agency</span>. Ask us about branding, design
             and advertising.Being small we can go into details.
-          </h3>
+          </h2>
           <p>
             We design through an iterative process mind mapping ideas to find
             opportunities and market niches, creating concepts. Your users are
@@ -18,7 +18,7 @@
             strong concept is what we stand for. Your users are impatient.
             They're probably distracted too.
           </p>
-          <button class="primary-button">Learn more</button>
+          <button class="button-primary">Learn more</button>
         </div>
         <img class="child" src="@/assets/images/Journey/journey.png" />
       </div>
@@ -26,10 +26,10 @@
       <div class="journey mt-5 mb-5">
         <img class="child" src="@/assets/images/Journey/journey.png" />
         <div class="child">
-          <h3>
+          <h2>
             We're a <span>creative agency</span>. Ask us about branding, design
             and advertising.Being small we can go into details.
-          </h3>
+          </h2>
           <p>
             We design through an iterative process mind mapping ideas to find
             opportunities and market niches, creating concepts. Your users are
@@ -38,7 +38,6 @@
             strong concept is what we stand for. Your users are impatient.
             They're probably distracted too.
           </p>
-          <button class="primary-button">Learn more</button>
         </div>
       </div>
     </div>
@@ -74,8 +73,9 @@
   object-fit: cover;
 }
 
-.journey .child h3 span {
-  font-family: Poppins;
+.journey .child span {
+  font-weight: bold;
+  font-family: var(--heading-font-family);
   color: var(--primary);
 }
 

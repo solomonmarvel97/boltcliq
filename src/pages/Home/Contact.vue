@@ -2,7 +2,7 @@
   <section>
     <div class="contact mt-8 mb-5">
       <div class="contact-head">
-        <h2 class="mb-2">Have you tried Boltcliq Agency?</h2>
+        <h1 class="mb-2">Get in touch</h1>
         <p>
           We bring a huge wealth of experience to native application design and
           development as an app design company based in London. We work with
@@ -19,7 +19,6 @@
         />
         <div class="child">
           <form>
-            <h3 class="mb-2">Contact Us</h3>
             <div>
               <label>Email Address</label>
               <input type="email" placeholder="whitneyblessing@gmail.com" />
@@ -33,7 +32,7 @@
               <textarea rows="10" style="height: 100px"></textarea>
             </div>
             <div>
-              <input class="wide" type="submit" value="Submit Message" />
+              <button class="button-primary wide" type="submit">Submit Message</button>
             </div>
           </form>
         </div>

@@ -1,65 +1,85 @@
 <template>
-  <section>
-    <div class="services mt-7">
-      <div v-for="(category, index) in services" :key="index">
-        <div class="mt-4 mb-4">
-          <div class="center">
-            <h3 class="text-center">{{ category.title }}</h3>
+  <div class="services" style="padding-top: 2em; padding-bottom: 3em">
+    <section>
+      <div>
+        <div v-for="(category, index) in services" :key="index">
+          <div class="mt-5 mb-5">
+            <div class="center">
+              <h3 class="text-center">{{ category.title }}</h3>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div
-            class="child"
-            v-for="(i, index) in category.categories"
-            :key="index"
-          >
-            <img :src="i.image" alt="" />
-            <p>{{ i.heading }}</p>
+          <div class="container">
+            <div
+              class="child"
+              v-for="(i, index) in category.categories"
+              :key="index"
+            >
+              <img :src="i.image" alt="" />
+              <h3>{{ i.heading }}</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <style scoped>
-.services h2 {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.services .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.services .container .child {
-  align-items: center;
-  flex-basis: 150px;
-}
-
-.services .container * {
-  margin-bottom: 11px;
-}
-
-.services .container .child img {
-  border-radius: var(--border-radius);
-  transition: all .2s;
-}
-
-.services .container .child img:hover {
-  transform: rotate(3deg) scale(1.05);
+.services {
+  background-color: #151515;
 }
 
 .services h3 {
-  font-weight: normal;
+  font-size: 30px;
+  color: white;
 }
-.services .container .child p {
-  font-size: 14px;
-  text-align: center;
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px
+}
+
+.services .container .child {
+  width: 100%;
+  height: 300px;
+  border: .5px solid rgba(255, 255, 255, 0.238);
+  position: relative;
+  display: grid;
+
+}
+
+.services .container .child::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+
+.services .container .child img {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+
+.services .container .child h3 {
+  font-size: 17px;
+  color: white;
+  position: absolute;
+  z-index: 101;
+  top: 250px;
+  font-weight: normal;
+  margin-left: 1em;
 }
 </style>
 

@@ -33,7 +33,6 @@
 }
 
 .about .about-container p {
-  font-family: "Quicksand";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;

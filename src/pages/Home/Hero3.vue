@@ -1,16 +1,9 @@
 <template>
-  <div class="home">
+  <div class="home mt-7">
     <div class="hero">
-      <video no-controls muted autoplay loop>
-        <source src="@/assets/images/background.mp4" type="video/mp4" />
-      </video>
       <div class="container">
         <div>
-          <h1>We create <span>innovative</span> digital solutions.</h1>
-          <p class="mb-2">
-            We create innovative digital products that impact the way people
-            experience the world.
-          </p>
+          <h1>We create innovative digital solutions.</h1>
           <button class="center button-primary">Get a quote</button>
         </div>
       </div>
@@ -22,7 +15,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background: #151515;
+  background-image: url('../../assets/images/design.png');
   mix-blend-mode: normal;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +65,6 @@ video {
 }
 
 .hero h1 span {
-  font-family: var(--heading-font-family);
   color: var(--primary);
 }
 

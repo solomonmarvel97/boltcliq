@@ -1,9 +1,10 @@
 <template>
-<hr>
+  <hr />
   <section class="mt-5 mb-5">
+    <h1>Our Development Processes</h1>
     <div class="processes">
       <div class="">
-        <span>RESEARCH PROCESS </span>
+        <p>RESEARCH PROCESS</p>
         <div class="container">
           <h1>Identify</h1>
           <h1>Formulate</h1>
@@ -13,7 +14,7 @@
         </div>
       </div>
       <div class="">
-        <span>DESIGN PROCESS </span>
+        <p>DESIGN PROCESS</p>
         <div class="container">
           <h1>Empathise</h1>
           <h1>Define</h1>
@@ -23,7 +24,7 @@
         </div>
       </div>
       <div class="">
-        <span>ENGINEERING PROCESS </span>
+        <p>ENGINEERING PROCESS</p>
         <div class="container">
           <h1>Identify</h1>
           <h1>Research</h1>
@@ -34,7 +35,7 @@
       </div>
     </div>
   </section>
-  <hr>
+  <hr />
 </template>
 
 <style scoped>
@@ -42,16 +43,17 @@
   height: 100%;
   margin-top: 5em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  align-items: center;
+  place-items: center;
 }
 
-span {
-  font-size: 12px;
+p {
+  font-size: 14px;
   color: rgb(158, 158, 158);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .processes {
@@ -65,17 +67,24 @@ span {
 
 h1 {
   font-weight: bold;
-  font-size: 35px;
-  transition: all .2s;
+  font-size: 50px;
+  transition: all 0.2s;
+  text-align: center;
 }
 
-h1:hover {
+.processes h1:hover {
   font-weight: bold;
   color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #151515;
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 </style>
 

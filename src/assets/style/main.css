@@ -31,6 +31,19 @@ p {
   font-family: var(--body-font-family);
 }
 
+
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  transition: all 0.2s;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+}
 h1,
 h2,
 h3,

@@ -1,59 +1,59 @@
 <template>
   <div class="home">
     <div class="hero">
-      <img class="hero-image" src="@/assets/images/1.jpg" />
       <section>
         <div class="container">
-          <img class="container-image" src="@/assets/images/4.jpg" />
-          <h1>We create innovative digital solutions.</h1>
-          <img class="wrapper avatar" src="@/assets/images/People/amaka.png" />
           <img class="wrapper avatar" src="@/assets/images/People/marv.png" />
-          <img class="wrapper avatar" src="@/assets/images/People/mayowa.png" />
-          <!-- <button class="button-light mt-2">Get a Quote</button> -->
+          <h1>We create innovative digital solutions.</h1>
+          <p>
+            We create innovative digital products that impact the way people
+            experience the world.
+          </p>
+          <button class="button-primary mt-2">Schedule meeting</button>
         </div>
       </section>
+      <img class="hero-image" src="@/assets/images/design2.png" />
     </div>
   </div>
 </template>
 
 <style scoped>
-.hero {
+.home {
   width: 100%;
   height: 100vh;
-  background: black;
-  mix-blend-mode: normal;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
+  background: #151515;
 }
 
-.hero .hero-image {
-  height: 70%;
-  width: 50%;
-  position: absolute;
-  right: -200px;
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  height: 100vh;
+  place-items: center;
+}
+
+.home .hero .hero-image {
+  width: 100%;
+  height: 100%;
   top: 15%;
-  border-radius: var(--border-radius);
+  /* border-radius: 50%; */
   object-fit: cover;
 }
 
 .hero .container {
   width: 546px;
-  position: absolute;
   bottom: 15%;
 }
 
 .hero .container .avatar {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-right: 0.5em;
   object-fit: cover;
   filter: contrast(120%);
-  transition: all .2s;
+  transition: all 0.2s;
 }
-
 
 .hero .container .container-image {
   height: 300px;
@@ -61,12 +61,12 @@
   object-fit: cover;
   margin-bottom: 1em;
   border-radius: var(--border-radius);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .hero .container .container-image:hover {
   object-fit: cover;
-  
+
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -79,11 +79,10 @@
 
 .hero h1 {
   line-height: 65px;
-  width: 700px;
   color: #ffffff;
   font-size: 50px;
   margin-bottom: 25px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .hero h1:hover {

@@ -3,6 +3,7 @@
   <Hero2 />
   <Processes />
   <Projects />
+  <Hero3 />
   <Experience />
   <Services />
   <Journey />
@@ -14,6 +15,7 @@
 <script>
 import Hero from "./Hero";
 import Hero2 from "./Hero2";
+import Hero3 from "./Hero3";
 import Processes from "./Processes";
 import Services from "./Services";
 import Experience from "./Experience";
@@ -28,6 +30,7 @@ export default {
   components: {
     Hero,
     Hero2,
+    Hero3,
     Processes,
     Experience,
     Services,

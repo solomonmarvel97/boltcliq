@@ -24,9 +24,6 @@
                 <li class="dropdown">
                   <router-link to="#">Contact</router-link>
                 </li>
-                <li class="dropdown">
-                  <button class="button-primary">Get a quote</button>
-                </li>
               </ul>
             </nav>
             <a href="#" class="nav__menu" @click="openNav()">
@@ -48,9 +45,6 @@
           </li>
           <li class="dropdown">
             <router-link to="#">Contact</router-link>
-          </li>
-          <li class="dropdown">
-            <button class="button-primary">Get a quote</button>
           </li>
         </ul>
       </div>

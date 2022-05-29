@@ -3,7 +3,7 @@
     <div class="mt-8 mb-2">
       <div class="center">
         <div class="mb-5">
-          <h2>Recent Projects</h2>
+          <h1>Recent Projects</h1>
         </div>
       </div>
 
@@ -117,6 +117,7 @@
 .recent-projects .box2 {
   flex-basis: 1;
 }
+
 </style>
 
 <script>
