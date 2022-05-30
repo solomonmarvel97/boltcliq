@@ -29,10 +29,16 @@ button {
   color: white;
   font-size: 16px;
   font-weight: normal;
+  border: 1px solid var(--primary);
+
 }
 
 .button-primary:hover {
-  background: var(--primary-tint);
+  /* background: var(--primary-tint); */
+  background: none;
+  /* border: 1px solid var(--primary); */
+  color: var(--primary);
+  transition: .2s ease-in;
 }
 
 .button-dark {

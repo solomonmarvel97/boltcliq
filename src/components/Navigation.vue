@@ -4,12 +4,12 @@
       <header class="desktop-nav">
         <div class="header__container">
           <div class="header__left">
-            <router-link to="/">
-              <img
-                class="logo"
-                src="@/assets/images/logo.svg"
-                alt="boltcliq logo"
-              />
+            <router-link
+              to="/"
+              style="display: flex; align-items: center; gap: 10px"
+            >
+              <img class="logo" src="@/assets/images/logo.svg" alt="logo" />
+              <p>BOLTCLIQ</p>
             </router-link>
           </div>
           <div class="header__right">
@@ -19,7 +19,7 @@
                   <a href="#">Industries</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#">Consulting Services</a>
+                  <a href="#">Consulting</a>
                 </li>
                 <li class="dropdown">
                   <a href="#">Digital</a>
@@ -39,6 +39,20 @@
               <img src="@/assets/icons/menu-icon.svg" />
             </a>
           </div>
+          <div class="header__right account">
+            <ul class="nav__links">
+              <li class="dropdown">
+                <a href="#">Explore</a>
+              </li>
+              <li class="dropdown">
+                <img
+                  class="user-icon"
+                  src="@/assets/icons/user.svg"
+                  alt="user"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
     </div>
@@ -46,24 +60,24 @@
       <a href="#" class="close" @click="closeNav()">&times;</a>
       <div class="overlay__content">
         <ul class="mobile__links">
-           <li class="dropdown">
-                  <a href="#">Industries</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Consulting Services</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Digital</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Insights</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">About</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Careers</a>
-                </li>
+          <li class="dropdown">
+            <a href="#">Industries</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Consulting</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Digital</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Insights</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Careers</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -97,16 +111,45 @@ export default {
   }
 }
 
+@media (max-width: 768px) {
+  .account {
+    display: none !important;
+  }
+}
+
 .navigation {
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.499);
+  background-color: rgba(0, 0, 0, 0.438);
   z-index: 100;
-  backdrop-filter: blur(5px);
-  height: 80px;
+  backdrop-filter: blur(2px);
+  height: 100px;
   display: grid;
   align-items: center;
   width: 100%;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.348);
+}
+
+.navigation:hover {
+  background-color: white;
+}
+
+.navigation:hover .nav__menu img, .close {
+  filter: invert();
+}
+
+.navigation:hover * {
+  color: #151515;
+}
+
+.user-icon {
+  height: 25px;
+  width: 25px;
+  filter: invert();
+}
+
+.navigation:hover .user-icon {
+  filter: none;
 }
 
 ul {
@@ -117,8 +160,8 @@ li,
 a {
   color: white;
   text-decoration: none;
-  font-weight: 200;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .header__container {
@@ -133,21 +176,12 @@ a {
   height: 30px;
 }
 
-
 .header__right a {
   padding: 15px 5px;
   display: flex;
   align-items: center;
   margin: 0 10px;
   transition: all 0.1s linear;
-}
-
-li.dropdown > a {
-  /* border-bottom: 3px solid transparent; */
-}
-
-.header__right li.dropdown a:hover {
-  color: white
 }
 
 .header__right div.dropdown__content a:hover {
@@ -185,8 +219,6 @@ li.dropdown > a {
   width: 100%;
   left: 0;
   z-index: 99;
-  border-top: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
 }
 
 .dropdown__content {
@@ -275,7 +307,7 @@ a.nav__menu {
   z-index: 50;
   left: 0;
   top: 0;
-  background-color: #0a0115;
+  background-color: #151515;
   overflow-x: hidden;
   transition: all 0.5s ease;
 }
@@ -305,11 +337,11 @@ a.nav__menu {
   place-items: center;
 }
 
-
 #mobile__menu > div > ul > li > a {
   font-size: 30px !important;
   display: grid;
   place-items: center;
+  color: white;
 }
 
 .overlay a {
@@ -339,6 +371,4 @@ a.nav__menu {
     right: 35px;
   }
 }
-
-/* learning path */
 </style>

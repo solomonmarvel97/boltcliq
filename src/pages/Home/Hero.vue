@@ -4,14 +4,27 @@
       <video no-controls muted autoplay loop>
         <source src="@/assets/images/background.mp4" type="video/mp4" />
       </video>
+
       <div class="container">
-        <div>
-          <h1>We create <span>innovative</span> digital solutions.</h1>
-          <p class="mb-2">
-            We create innovative digital products that impact the way people
-            experience the world.
-          </p>
-          <button class="center button-primary">Learn More</button>
+        <section>
+          <div>
+            <h1>We create innovative digital solutions.</h1>
+            <p class="mb-2">
+              We create innovative digital products that impact the way people
+              experience the world.
+            </p>
+            <button class="button-primary">Learn More</button>
+          </div>
+        </section>
+        <div class="container-bottom">
+          <section>
+            <div class="bottom-grid">
+              <h4 class="bottom-text">The Future of Education</h4>
+              <h4 class="bottom-text">Food Aggregation</h4>
+              <h4 class="bottom-text">Top Universe Cohort</h4>
+              <h4 class="bottom-text">Product Development</h4>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -27,6 +40,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+section {
+  width: 85%;
+  margin: 0 auto;
 }
 
 video {
@@ -53,22 +71,46 @@ video {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
   display: grid;
-  place-items: center;
+  align-items: center;
 }
 
-.hero .container div {
+.hero .container-bottom {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+.hero .container-bottom .bottom-grid {
   display: grid;
-  place-items: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bottom-text {
+  color: rgba(255, 255, 255, 0.505);
+  padding: 10px;
+  font-size: 15px;
+}
+
+.bottom-text:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.042);
+  border-top: 5px solid white;
+  transition: all 0.4s ease-in-out;
 }
 
 .hero h1 {
   line-height: 1.1;
   width: 600px;
   color: #ffffff;
-  font-size: 70px;
+  font-size: 55px;
   margin-bottom: 25px;
-  text-align: center;
 }
 
 .hero h1 span {
@@ -81,7 +123,6 @@ video {
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
-  text-align: center;
 }
 
 .hero .player_button p {
@@ -91,16 +132,19 @@ video {
 @media (max-width: 768px) {
   .hero {
     background-position: top right;
+    height: 130vh;
   }
 
   .hero h1 {
     width: 100%;
-    line-height: 47px;
-    font-size: 47px;
+    line-height: 45px;
+    font-size: 45px;
   }
 
   .hero p {
     width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .hero .container {
