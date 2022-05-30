@@ -19,10 +19,18 @@
         <div class="container-bottom">
           <section>
             <div class="bottom-grid">
+              <a href="https://pages.topuniverse.org/message-from-our-ceo/" target="_blank">
               <h4 class="bottom-text">The Future of Education</h4>
+              </a>
+              <a href="#">
               <h4 class="bottom-text">Food Aggregation</h4>
+              </a>
+              <a href="https://topuniverse.org/cohorts/" target="_blank">
               <h4 class="bottom-text">Top Universe Cohort</h4>
+              </a>
+              <a href="https://topafrica.org" target="_blank">
               <h4 class="bottom-text">Product Development</h4>
+              </a>
             </div>
           </section>
         </div>
@@ -40,6 +48,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+a {
+  all: unset
 }
 
 section {
@@ -96,12 +108,13 @@ video {
   color: rgba(255, 255, 255, 0.505);
   padding: 10px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .bottom-text:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.042);
-  border-top: 5px solid white;
+  border-top: .1px solid white;
   transition: all 0.4s ease-in-out;
 }
 
