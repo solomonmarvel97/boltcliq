@@ -1,6 +1,6 @@
 <template>
   <main class="navigation">
-    <section>
+    <div style="width: 85%; margin: 0 auto">
       <header class="desktop-nav">
         <div class="header__container">
           <div class="header__left">
@@ -16,13 +16,22 @@
             <nav>
               <ul class="nav__links">
                 <li class="dropdown">
+                  <a href="#">Industries</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Consulting Services</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Digital</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Insights</a>
+                </li>
+                <li class="dropdown">
                   <a href="#">About</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#">Company</a>
-                </li>
-                <li class="dropdown">
-                  <router-link to="#">Contact</router-link>
+                  <a href="#">Careers</a>
                 </li>
               </ul>
             </nav>
@@ -32,20 +41,29 @@
           </div>
         </div>
       </header>
-    </section>
+    </div>
     <div id="mobile__menu" class="mobile-nav overlay">
       <a href="#" class="close" @click="closeNav()">&times;</a>
       <div class="overlay__content">
         <ul class="mobile__links">
-          <li class="dropdown">
-            <a href="#">About</a>
-          </li>
-          <li class="dropdown">
-            <a href="#">Company</a>
-          </li>
-          <li class="dropdown">
-            <router-link to="#">Contact</router-link>
-          </li>
+           <li class="dropdown">
+                  <a href="#">Industries</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Consulting Services</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Digital</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Insights</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">About</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Careers</a>
+                </li>
         </ul>
       </div>
     </div>
@@ -129,7 +147,6 @@ li.dropdown > a {
 }
 
 .header__right li.dropdown a:hover {
-  font-weight: bold;
   color: white
 }
 

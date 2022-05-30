@@ -26,7 +26,7 @@
 
 <style scoped>
 .services {
-  background-color: #151515;
+  background-color: black;
 }
 
 .services h3 {

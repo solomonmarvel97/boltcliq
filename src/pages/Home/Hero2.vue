@@ -3,7 +3,10 @@
     <div class="hero">
       <section>
         <div class="container">
-          <img class="wrapper avatar" src="@/assets/images/People/marv.png" />
+          <div>
+          <img class="wrapper avatar" src="@/assets/images/People/amaka.png" />
+          <img class="wrapper avatar" src="@/assets/images/People/mayowa.png" />
+          </div>
           <h1>We create innovative digital solutions.</h1>
           <p>
             We create innovative digital products that impact the way people

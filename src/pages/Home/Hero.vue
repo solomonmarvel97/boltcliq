@@ -11,7 +11,7 @@
             We create innovative digital products that impact the way people
             experience the world.
           </p>
-          <button class="center button-primary">Get a quote</button>
+          <button class="center button-primary">Learn More</button>
         </div>
       </div>
     </div>
