@@ -99,11 +99,9 @@
 .testimonial-container {
   position: relative;
   height: 314px;
-  flex: 0 0 350px;
+  flex: 0 0 300px;
   font-size: 40px;
   justify-content: center;
-  scroll-snap-align: start;
-  transition: all 0.5s;
 }
 
 img {
@@ -116,7 +114,6 @@ img {
 .card-text {
   padding: 30px;
   background: #ffffff;
-  box-shadow: 4px 0px 50px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
 

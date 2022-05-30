@@ -29,9 +29,9 @@
 
 .hero {
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  height: 100vh;
   place-items: center;
 }
 
@@ -39,19 +39,17 @@
   width: 100%;
   height: 100%;
   top: 15%;
-  /* border-radius: 50%; */
   object-fit: cover;
 }
 
 .hero .container {
-  width: 546px;
   bottom: 15%;
 }
 
 .hero .container .avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 0.5em;
   object-fit: cover;
   filter: contrast(120%);
@@ -59,8 +57,7 @@
 }
 
 .hero .container .container-image {
-  height: 300px;
-  width: 60%;
+  width: 100%;
   object-fit: cover;
   margin-bottom: 1em;
   border-radius: var(--border-radius);
@@ -69,7 +66,6 @@
 
 .hero .container .container-image:hover {
   object-fit: cover;
-
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -93,7 +89,6 @@
   color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
   cursor: pointer;
 }
 
@@ -117,18 +112,23 @@
 }
 
 @media (max-width: 768px) {
+  .home {
+    height: 100%;
+    padding-top: 2em;
+  }
+
   .hero {
     background-position: top right;
   }
 
   .hero h1 {
-    width: 90%;
+    width: 100%;
     line-height: 47px;
     font-size: 47px;
   }
 
   .hero .container {
-    width: 95%;
+    width: 100%;
   }
 
   .hero .container > p {

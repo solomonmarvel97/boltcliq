@@ -57,6 +57,13 @@
   object-fit: contain;
   margin: 20px;
 }
+
+@media (max-width: 768px) {
+  .about .about-container p {
+    font-size: 15px;
+  line-height: 1.4;
+  }
+}
 </style>
 
 <script>

@@ -18,13 +18,15 @@ button {
 }
 
 .button-secondary {
-  background: var(--background);
-
+  background: var(--secondary);
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .button-primary {
   background: var(--primary);
-  color:white;
+  color: white;
   font-size: 16px;
   font-weight: normal;
 }

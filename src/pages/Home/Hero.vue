@@ -94,17 +94,17 @@ video {
   }
 
   .hero h1 {
-    width: 90%;
+    width: 100%;
     line-height: 47px;
     font-size: 47px;
   }
 
   .hero p {
-    width: 90%;
+    width: 100%;
   }
 
   .hero .container {
-    width: 95%;
+    width: 100%;
   }
 }
 </style>

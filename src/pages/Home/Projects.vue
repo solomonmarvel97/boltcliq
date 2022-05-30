@@ -14,7 +14,7 @@
             analytics and business-to-business software companies.
           </p>
         </div>
-        <button class="mt-2 primary-button">Learn more</button>
+        <button class="mt-2 button-secondary">Learn more</button>
       </div>
     </div>
     <div class="flex-container">
@@ -97,7 +97,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  gap: 30px;
+  align-items: center;
 }
 
 .recent-projects .child {
