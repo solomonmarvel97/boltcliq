@@ -1,5 +1,4 @@
 <template>
-  <hr />
   <section class="mt-5 mb-5">
     <h1>Our Development Processes</h1>
     <div class="processes">
@@ -43,7 +42,7 @@
   height: 100%;
   margin-top: 5em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   place-items: center;
 }

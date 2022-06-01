@@ -26,26 +26,26 @@
 
 <style scoped>
 .services {
-  background-color: black;
+  /* background-color: #151515; */
 }
 
 .services h3 {
   font-size: 30px;
-  color: white;
+  text-align: center;
 }
 
 .services .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
 }
 
 .services .container .child {
   width: 100%;
-  height: 300px;
-  border: .5px solid rgba(255, 255, 255, 0.238);
+  height: 150px;
   position: relative;
   display: grid;
+  place-items: center;
 
 }
 
@@ -54,32 +54,34 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.67) 100%);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 100;
+  border-radius: var(--border-radius);
 }
 
 
 .services .container .child img {
   position: absolute;
   width: 100%;
-  height: 230px;
+  height: 100%;
   top: 0;
   left: 0;
   object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 
 .services .container .child h3 {
-  font-size: 17px;
+  font-size: 14px;
   color: white;
   position: absolute;
+  bottom: 15%;
   z-index: 101;
-  top: 250px;
   font-weight: normal;
-  margin-left: 1em;
 }
 </style>
 

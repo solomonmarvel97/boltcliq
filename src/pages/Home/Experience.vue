@@ -44,7 +44,7 @@
 
 .experience .container .child {
   align-items: center;
-  flex-basis: 250px;
+  flex-basis: 300px;
   background-color: rgba(214, 214, 214, 0.094);
   padding: 35px;
   border-radius: var(--border-radius);

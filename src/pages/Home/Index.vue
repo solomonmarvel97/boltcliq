@@ -6,9 +6,9 @@
   <Hero3 />
   <Experience />
   <Services />
-  <Journey />
-  <Testimonials />
-  <About />
+  <CaseStudy />
+  <!-- <Testimonials /> -->
+  <!-- <About /> -->
   <Contact />
 </template>
 
@@ -19,10 +19,10 @@ import Hero3 from "./Hero3";
 import Processes from "./Processes";
 import Services from "./Services";
 import Experience from "./Experience";
-import Journey from "./Journey";
+import CaseStudy from "./CaseStudy";
 import Projects from "./Projects";
-import Testimonials from "./Testimonials";
-import About from "./About";
+// import Testimonials from "./Testimonials";
+// import About from "./About";
 import Contact from "./Contact";
 
 export default {
@@ -34,10 +34,10 @@ export default {
     Processes,
     Experience,
     Services,
-    Journey,
+    CaseStudy,
     Projects,
-    Testimonials,
-    About,
+    // Testimonials,
+    // About,
     Contact,
   },
 };

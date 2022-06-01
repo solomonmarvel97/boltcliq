@@ -1,6 +1,6 @@
 <template>
   <main class="navigation">
-    <div style="width: 85%; margin: 0 auto">
+    <div style="width: 90%; margin: 0 auto">
       <header class="desktop-nav">
         <div class="header__container">
           <div class="header__left">
@@ -119,15 +119,18 @@ export default {
 
 .navigation {
   position: fixed;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.438);
-  z-index: 100;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.583);
+  z-index: 9999;
   backdrop-filter: blur(2px);
-  height: 100px;
+  height: 70px;
   display: grid;
   align-items: center;
-  width: 100%;
-  border-bottom: 0.1px solid rgba(255, 255, 255, 0.348);
+  width: 90%;
+  border-radius: 150px;
+  margin: 0 auto;
+  left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .navigation:hover {

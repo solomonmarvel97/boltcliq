@@ -4,8 +4,14 @@
       <section>
         <div class="container">
           <div>
-          <img class="wrapper avatar" src="@/assets/images/People/amaka.png" />
-          <img class="wrapper avatar" src="@/assets/images/People/mayowa.png" />
+            <img
+              class="wrapper avatar"
+              src="@/assets/images/People/amaka.png"
+            />
+            <img
+              class="wrapper avatar"
+              src="@/assets/images/People/mayowa.png"
+            />
           </div>
           <h1>We create innovative digital solutions.</h1>
           <p>
@@ -86,7 +92,7 @@
 
 .hero h1:hover {
   font-weight: bold;
-  color: black;
+  color: #151515;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   cursor: pointer;

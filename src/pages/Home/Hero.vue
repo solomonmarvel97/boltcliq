@@ -124,6 +124,20 @@ video {
   color: #ffffff;
   font-size: 55px;
   margin-bottom: 25px;
+  background-image: linear-gradient(50deg, #adcaff 10.67%, #c3b4ff 89.67%);
+  color: transparent;
+  background-clip: text;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
 
 .hero h1 span {
