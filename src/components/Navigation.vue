@@ -123,21 +123,33 @@ export default {
   background-color: rgba(0, 0, 0, 0.583);
   z-index: 9999;
   backdrop-filter: blur(2px);
-  height: 70px;
+  height: 80px;
   display: grid;
   align-items: center;
   width: 90%;
   border-radius: 150px;
   margin: 0 auto;
   left: 50%;
-    transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+  position: fixed;
+  width: 100%;
+  display: grid;
+  border-radius: 0;
+  top: 0;
+}
+
 }
 
 .navigation:hover {
   background-color: white;
 }
 
-.navigation:hover .nav__menu img, .close {
+.navigation:hover .nav__menu img,
+.close {
   filter: invert();
 }
 

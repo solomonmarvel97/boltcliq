@@ -36,6 +36,7 @@
 .hero {
   display: grid;
   height: 100%;
+  padding-bottom: 1em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   place-items: center;
@@ -45,7 +46,7 @@
   width: 100%;
   height: 100%;
   top: 15%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hero .container {
@@ -54,12 +55,13 @@
 
 .hero .container .avatar {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   margin-right: 0.5em;
   object-fit: cover;
   filter: contrast(120%);
   transition: all 0.2s;
+  margin-bottom: 15px;
 }
 
 .hero .container .container-image {
@@ -83,10 +85,10 @@
 }
 
 .hero h1 {
-  line-height: 65px;
+  line-height: 55px;
   color: #ffffff;
-  font-size: 50px;
-  margin-bottom: 25px;
+  font-size: 40px;
+  margin-bottom: 15px;
   transition: all 0.3s;
 }
 
@@ -123,14 +125,11 @@
     padding-top: 2em;
   }
 
-  .hero {
-    background-position: top right;
-  }
 
   .hero h1 {
     width: 100%;
-    line-height: 47px;
-    font-size: 47px;
+    line-height: 35px;
+    font-size: 30px;
   }
 
   .hero .container {
