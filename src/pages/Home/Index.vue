@@ -2,7 +2,7 @@
   <Hero />
   <Hero2 />
   <Processes />
-  <Projects />
+  <!-- <Projects /> -->
   <Hero3 />
   <Experience />
   <Services />
