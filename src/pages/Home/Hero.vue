@@ -36,11 +36,11 @@
               <a href="#">
                 <h4 class="bottom-text">Food Aggregation</h4>
               </a>
-              <a href="https://topuniverse.org/cohorts/" target="_blank">
+              <a href="https://topuniverse.org/cohort/" target="_blank">
                 <h4 class="bottom-text">Top Universe Cohort</h4>
               </a>
               <a href="https://topafrica.org" target="_blank">
-                <h4 class="bottom-text">Product Development</h4>
+                <h4 class="bottom-text">Products Partner</h4>
               </a>
             </div>
           </section>
