@@ -5,16 +5,16 @@
         <div class="footer-nav">
           <div class="heading">Contact us</div>
           <ul>
-            <a href="/community">
+            <a href="#">
               <li>Industries</li>
             </a>
-            <a href="/people">
+            <a href="#">
               <li>Consulting</li>
             </a>
-            <a href="/people">
+            <a href="#">
               <li>Digital</li>
             </a>
-            <a href="/people">
+            <a href="#">
               <li>Insights</li>
             </a>
           </ul>
@@ -24,7 +24,7 @@
           <div class="heading">Useful Links</div>
           <ul>
             <a href="#">
-              <li>Workshops</li>
+              <li>Events</li>
             </a>
             <a href="#">
               <li>Partners</li>
@@ -35,7 +35,7 @@
           <div class="heading">Work</div>
           <ul>
             <a href="/#FAQ"> <li>FAQ</li></a>
-            <a target="_blank" href="mailto:beep@topuniverse.org">
+            <a target="_blank" href="mailto:office@boltcliq.com">
               <li>office@boltcliq.com</li>
             </a>
             <a
@@ -47,7 +47,7 @@
           </ul>
         </div>
         <div class="footer-nav">
-          <div class="heading">Social Media</div>
+          <div class="heading">Social</div>
           <ul>
             <a href="#">
               <li>Twitter</li>

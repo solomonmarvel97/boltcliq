@@ -1,16 +1,20 @@
 <template>
-  <section>
     <div class="experience mt-5">
-      <div class="center">
+      <div class="">
         <div class="mt-5 mb-5">
           <h2 class="text-center">
-            Our leadership team brings together Years of experience building
-            products for analytics and business-to-business software companies.
+            Our leadership team brings together years of experience building
+            products for analytics, b2b software companies, and SaaS products.
           </h2>
         </div>
         <div class="container">
-          <div class="child" v-for="(i, index) in branches" :key="index">
-            <img :src="i.image" alt="" />
+          <div
+            class="child"
+            v-for="(i, index) in branches"
+            :key="index"
+            :class="i.color"
+          >
+            <div class="image"></div>
             <h3>{{ i.heading }}</h3>
             <p>
               {{ i.descriptin }}
@@ -19,8 +23,6 @@
         </div>
       </div>
     </div>
-    <hr />
-  </section>
 </template>
 
 <style scoped>
@@ -28,6 +30,7 @@
   margin-bottom: 3em;
   margin-top: 6em;
 }
+
 .experience h2 {
   width: 70%;
   margin: 0 auto;
@@ -44,28 +47,30 @@
 
 .experience .container .child {
   align-items: center;
-  flex-basis: 300px;
-  background-color: rgba(214, 214, 214, 0.094);
-  padding: 35px;
+  flex-basis: 350px;
+  padding: 40px;
   border-radius: var(--border-radius);
-  transition: all .5s ;
   cursor: pointer;
 }
 
 .experience .container .child:hover {
-  background-color: #151515;
+  background-color: #f5f5f5;
 }
 
-.experience .container .child:hover *{
-  color: white;
+.experience .container .child:hover {
+  border: 1px solid rgba(0, 0, 0, 0.089);
 }
 
-.experience .container .child img {
-  object-fit: cover;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  transition: all 0.5s;
+.red {
+  background-color: rgba(255, 229, 229, 0.519);
+}
+
+.blue {
+  background-color: rgba(219, 234, 255, 0.531);
+}
+
+.green {
+  background-color: rgba(215, 255, 217, 0.436);
 }
 
 .experience .container .child img:hover {
@@ -73,12 +78,12 @@
 }
 
 .experience .container .child * {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .experience .container .child p {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
@@ -91,22 +96,22 @@
 <script>
 let branches = [
   {
-    image: require("@/assets/images/Experience/engineering.png"),
+    color: "red",
     heading: "Software Product Engineering",
     descriptin:
-      "We design through an iterative process mind mapping ideas to find opportunities.",
+      "Our full-stack design and development team provides frontend development, backend development, design services, native iOS & android mobile apps, web apps, wearable apps, and (B2B)/enterprise software",
   },
   {
-    image: require("@/assets/images/Experience/research.png"),
-    heading: "Market Strategy & Research",
+    color: "green",
+    heading: "Market Strategy & Research Development",
     descriptin:
-      " We design through an iterative process mind mapping ideas to find opportunities.",
+      "We Undertake live projects into researching and positioning products to build  Stakeholder interviews, user research, competitor analysis, and content consolidation are all conducted by our user experience designers",
   },
   {
-    image: require("@/assets/images/Experience/design.png"),
+    color: "blue",
     heading: "Graphics & User Experience Design",
     descriptin:
-      "We design through an iterative process mind mapping ideas to find opportunities.",
+      "Our designers experiment, create and interact. To create beautiful and functional products. We transform legacy enterprise platforms into delightful, consumer-grade experiences and develop new products people enjoy using",
   },
 ];
 

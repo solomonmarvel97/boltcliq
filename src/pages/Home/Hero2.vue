@@ -1,35 +1,46 @@
 <template>
   <div class="home">
-    <div class="hero">
-      <section>
-        <div class="container">
-          <div>
-            <img
-              class="wrapper avatar"
-              src="@/assets/images/People/amaka.png"
-            />
-            <img
-              class="wrapper avatar"
-              src="@/assets/images/People/mayowa.png"
-            />
-          </div>
-          <h1>We create innovative digital solutions.</h1>
+    <section>
+      <div class="heading">
+        <div class="center">
+          <h1 class="mb-1">Providing impactful product-led experience</h1>
           <p>
-            We create innovative digital products that impact the way people
-            experience the world.
+            Successful products satisfy user needs, rely on intelligent
+            technology choices, and focus on business outcomes. We help you
+            achieve product-driven growth.
           </p>
-          <button class="button-primary mt-2">Schedule meeting</button>
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="hero">
+      <img class="hero-image" src="@/assets/images/design1.png" />
       <img class="hero-image" src="@/assets/images/design2.png" />
     </div>
   </div>
 </template>
 
 <style scoped>
+.heading {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  width: 600px;
+  color: var(--white);
+  margin: 0 auto;
+}
+
+h1 {
+  line-height: 1.2;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.heading p {
+  line-height: 1.6;
+}
+
 .home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #151515;
 }
 
@@ -125,8 +136,7 @@
     padding-top: 2em;
   }
 
-
-  .hero h1 {
+  h1 {
     width: 100%;
     line-height: 35px;
     font-size: 30px;

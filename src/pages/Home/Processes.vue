@@ -34,7 +34,6 @@
       </div>
     </div>
   </section>
-  <hr />
 </template>
 
 <style scoped>
@@ -59,16 +58,23 @@ p {
   display: grid;
 }
 
+.processes > div {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  border-radius: var(--border-radius);
+}
+
 .processes .container {
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   transition: all 0.2s;
   text-align: center;
+  color: #151515;
 }
 
 .processes h1:hover {

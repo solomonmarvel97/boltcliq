@@ -2,10 +2,12 @@
   <div class="home mt-7">
     <div class="hero">
       <div class="container">
-        <div>
-          <h1>We create innovative digital solutions.</h1>
-          <button class="center button-primary">Get a quote</button>
-        </div>
+        <section>
+          <h1>
+            We listen, research, learn and understand before we build. Our
+            processes makes us better professionals.
+          </h1>
+        </section>
       </div>
     </div>
   </div>
@@ -15,7 +17,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url('../../assets/images/design.png');
+  background-image: url("../../assets/images/design.png");
   mix-blend-mode: normal;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,12 +58,12 @@ video {
 }
 
 .hero h1 {
-  line-height: 1.1;
-  width: 600px;
+  line-height: 1.2;
   color: #ffffff;
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: 25px;
   text-align: center;
+  font-weight: 500;
 }
 
 .hero h1 span {
@@ -86,9 +88,8 @@ video {
   }
 
   .hero h1 {
-    width: 90%;
-    line-height: 47px;
-    font-size: 47px;
+    width: 100%;
+    font-size: 30px;
   }
 
   .hero p {

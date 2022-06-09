@@ -10,26 +10,29 @@
           <div>
             <h1>We create innovative digital solutions.</h1>
             <p class="mb-2">
-              We create innovative digital products that impact the way people
-              experience the world.
+              We create world-class digital products, web design, and branding
+              that impacts people's experience
             </p>
-            <button class="button-primary">Learn More</button>
+            <button class="button-primary">Book a Session</button>
           </div>
         </section>
         <div class="container-bottom">
           <section>
             <div class="bottom-grid">
-              <a href="https://pages.topuniverse.org/message-from-our-ceo/" target="_blank">
-              <h4 class="bottom-text">The Future of Education</h4>
+              <a
+                href="https://pages.topuniverse.org/message-from-our-ceo/"
+                target="_blank"
+              >
+                <h4 class="bottom-text">The Future of Education</h4>
               </a>
               <a href="#">
-              <h4 class="bottom-text">Food Aggregation</h4>
+                <h4 class="bottom-text">Food Aggregation</h4>
               </a>
               <a href="https://topuniverse.org/cohorts/" target="_blank">
-              <h4 class="bottom-text">Top Universe Cohort</h4>
+                <h4 class="bottom-text">Top Universe Cohort</h4>
               </a>
               <a href="https://topafrica.org" target="_blank">
-              <h4 class="bottom-text">Product Development</h4>
+                <h4 class="bottom-text">Product Development</h4>
               </a>
             </div>
           </section>
@@ -51,7 +54,7 @@
 }
 
 a {
-  all: unset
+  all: unset;
 }
 
 section {
@@ -114,16 +117,16 @@ video {
 .bottom-text:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.042);
-  border-top: .1px solid white;
+  border-top: 0.1px solid white;
   transition: all 0.4s ease-in-out;
 }
 
 .hero h1 {
-  line-height: 1.1;
-  width: 600px;
+  line-height: 1.3;
+  width: 650px;
   color: #ffffff;
   font-size: 55px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   background-image: linear-gradient(50deg, #adcaff 10.67%, #c3b4ff 89.67%);
   color: transparent;
   background-clip: text;
@@ -147,7 +150,7 @@ video {
 
 .hero p {
   width: 600px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   color: #ffffff;
 }
