@@ -28,6 +28,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .heading {
+    width: 100%;
+  }
+}
+
 h1 {
   line-height: 1.2;
   font-size: 30px;
