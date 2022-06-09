@@ -40,7 +40,7 @@
             </a>
             <a
               target="_blank"
-              href="https://calendly.com/topuniverseafrica/conversation-with-top-universe-team"
+              href="https://calendly.com/boltcliq/30-minutes-free-consultation"
             >
               <li>Book a Meeting</li>
             </a>

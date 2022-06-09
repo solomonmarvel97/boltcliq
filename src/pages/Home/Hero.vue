@@ -13,7 +13,15 @@
               We create world-class digital products, web design, and branding
               that impacts people's experience
             </p>
-            <button class="button-primary">Book a Session</button>
+            <button
+              class="button-primary"
+              onclick="
+                window.location.href =
+                  'https://calendly.com/boltcliq/30-minutes-free-consultation'
+              "
+            >
+              Book a Session
+            </button>
           </div>
         </section>
         <div class="container-bottom">
