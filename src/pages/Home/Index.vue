@@ -2,13 +2,10 @@
   <Hero />
   <Hero2 />
   <Processes />
-  <!-- <Projects /> -->
   <Hero3 />
   <Experience />
   <Services />
   <CaseStudy />
-  <!-- <Testimonials /> -->
-  <!-- <About /> -->
   <Contact />
 </template>
 
@@ -21,8 +18,6 @@ import Services from "./Services";
 import Experience from "./Experience";
 import CaseStudy from "./CaseStudy";
 import Projects from "./Projects";
-// import Testimonials from "./Testimonials";
-// import About from "./About";
 import Contact from "./Contact";
 
 export default {
@@ -36,8 +31,6 @@ export default {
     Services,
     CaseStudy,
     Projects,
-    // Testimonials,
-    // About,
     Contact,
   },
 };
