@@ -372,7 +372,7 @@ a.nav__menu {
   position: absolute;
   top: 5px;
   right: 25px;
-  font-size: 30px;
+  font-size: 40px !important;
 }
 
 @media screen and (max-height: 450px) {

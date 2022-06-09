@@ -5,9 +5,8 @@
         <h1 class="mb-2">Get in touch</h1>
         <p>
           We bring a huge wealth of experience to native application design and
-          development as an app design company based in London. We work with
-          both established businesses and start-ups looking to disrupt the
-          market through innovative app design.
+          development. We work with both established businesses and start-ups
+          looking to disrupt the market through innovative app design.
         </p>
       </div>
 
@@ -32,7 +31,9 @@
               <textarea rows="10" style="height: 100px"></textarea>
             </div>
             <div>
-              <button class="button-primary wide" type="submit">Submit Message</button>
+              <button class="button-primary wide" type="submit">
+                Submit Message
+              </button>
             </div>
           </form>
         </div>
