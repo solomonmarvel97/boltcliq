@@ -35,7 +35,7 @@
                 </li>
               </ul>
             </nav>
-            <a href="#" class="nav__menu" @click="openNav()">
+            <a href="#" class="nav__menu" @click="toggle">
               <img src="@/assets/icons/menu-icon.svg" />
             </a>
           </div>
@@ -56,8 +56,8 @@
         </div>
       </header>
     </div>
-    <div id="mobile__menu" class="mobile-nav overlay">
-      <a href="#" class="close" @click="closeNav()">&times;</a>
+    <div id="mobile__menu" class="mobile-nav overlay hidden">
+      <a href="#" class="close" @click="toggle">&times;</a>
       <div class="overlay__content">
         <ul class="mobile__links">
           <li class="dropdown">
@@ -84,19 +84,29 @@
   </main>
 </template>
 
+
 <script>
+// Select required elements from the DOM
+
 export default {
   components: {},
-  data() {
-    return {};
-  },
   methods: {
-    openNav() {
-      document.getElementById("mobile__menu").style.width = "100%";
+    toggle(e) {
+      const modal = document.querySelector("#mobile__menu");
+      const body = document.querySelector("body");
+      modal.classList.toggle("hidden");
+      if (!modal.classList.contains("hidden")) {
+        // Disable scroll
+        body.style.overflow = "hidden";
+      } else {
+        // Enable scroll
+        body.style.overflow = "auto";
+      }
     },
-
-    closeNav() {
-      document.getElementById("mobile__menu").style.width = "0";
+  },
+  computed: {
+    routerPath() {
+      return this.$route.name.toLowerCase();
     },
   },
 };
@@ -216,6 +226,14 @@ a {
   display: flex;
   margin: 5px 5px;
   align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#mobile__menu {
+  width: 100%;
 }
 
 .nav__links a span {
