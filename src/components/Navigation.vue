@@ -16,6 +16,9 @@
             <nav>
               <ul class="nav__links">
                 <li class="dropdown">
+                  <a href="https://blog.boltcliq.com">Blog</a>
+                </li>
+                <li class="dropdown">
                   <a href="#">Industries</a>
                 </li>
                 <li class="dropdown">
@@ -61,6 +64,9 @@
       <div class="overlay__content">
         <ul class="mobile__links">
           <li class="dropdown">
+            <a href="https://blog.boltcliq.com">Blog</a>
+          </li>
+          <li class="dropdown">
             <a href="#">Industries</a>
           </li>
           <li class="dropdown">
@@ -84,7 +90,6 @@
   </main>
 </template>
 
-
 <script>
 // Select required elements from the DOM
 
@@ -97,10 +102,10 @@ export default {
       modal.classList.toggle("hidden");
       if (!modal.classList.contains("hidden")) {
         // Disable scroll
-        body.style.overflow = "hidden"
+        body.style.overflow = "hidden";
       } else {
         // Enable scroll
-        body.style.overflow = "auto"
+        body.style.overflow = "auto";
       }
     },
   },
@@ -145,13 +150,12 @@ export default {
 
 @media (max-width: 768px) {
   .navigation {
-  position: fixed;
-  width: 100%;
-  display: grid;
-  border-radius: 0;
-  top: 0;
-}
-
+    position: fixed;
+    width: 100%;
+    display: grid;
+    border-radius: 0;
+    top: 0;
+  }
 }
 
 .navigation:hover {
