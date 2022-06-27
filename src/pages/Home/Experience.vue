@@ -12,7 +12,6 @@
             class="child"
             v-for="(i, index) in branches"
             :key="index"
-            :class="i.color"
           >
             <div class="image"></div>
             <h3>{{ i.heading }}</h3>
@@ -53,29 +52,10 @@
   cursor: pointer;
 }
 
-.experience .container .child:hover {
-  background-color: #f5f5f5;
+.experience .container .child:nth-child(2), .child:nth-child(3) {
+  border-left: 1px solid rgba(0, 0, 0, 0.089);
 }
 
-.experience .container .child:hover {
-  border: 1px solid rgba(0, 0, 0, 0.089);
-}
-
-.red {
-  background-color: rgba(255, 229, 229, 0.519);
-}
-
-.blue {
-  background-color: rgba(219, 234, 255, 0.531);
-}
-
-.green {
-  background-color: rgba(215, 255, 217, 0.436);
-}
-
-.experience .container .child img:hover {
-  transform: rotate(20deg) scale(1.2);
-}
 
 .experience .container .child * {
   margin-bottom: 20px;
@@ -90,25 +70,25 @@
   .experience h2 {
     width: 100%;
   }
+  .experience .container .child{
+    border-left: 1px solid rgba(0, 0, 0, 0.089);
+  }
 }
 </style>
 
 <script>
 let branches = [
   {
-    color: "red",
     heading: "Software Product Engineering",
     descriptin:
       "Our full-stack design and development team provides frontend development, backend development, design services, native iOS & android mobile apps, web apps, wearable apps, and (B2B)/enterprise software",
   },
   {
-    color: "green",
     heading: "Market Strategy & Research Development",
     descriptin:
       "We Undertake live projects into researching and positioning products to build  Stakeholder interviews, user research, competitor analysis, and content consolidation are all conducted by our user experience designers",
   },
   {
-    color: "blue",
     heading: "Graphics & User Experience Design",
     descriptin:
       "Our designers experiment, create and interact. To create beautiful and functional products. We transform legacy enterprise platforms into delightful, consumer-grade experiences and develop new products people enjoy using",

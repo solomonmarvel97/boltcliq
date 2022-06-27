@@ -59,7 +59,6 @@ p {
 }
 
 .processes > div {
-  border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 30px;
   border-radius: var(--border-radius);
 }

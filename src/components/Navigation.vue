@@ -138,11 +138,11 @@ export default {
   background-color: rgba(0, 0, 0, 0.583);
   z-index: 9999;
   backdrop-filter: blur(2px);
-  height: 80px;
+  height: 60px;
   display: grid;
   align-items: center;
   width: 90%;
-  border-radius: 150px;
+  border-radius: var(--border-radius);
   margin: 0 auto;
   left: 50%;
   transform: translate(-50%, 0);

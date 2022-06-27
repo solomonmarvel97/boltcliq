@@ -11,9 +11,9 @@
   --body-font-size: 15px;
   --form-font-size: 14px;
   --heading-font-size: 22px;
-  --heading-font-family: "Space Grotesk", sans-serif;
-  --heavy-font-family: "Poller One", cursive;
-  --body-font-family: 'Montserrat', sans-serif;
+  --heading-font-family: "Work Sans", sans-serif;
+  --heavy-font-family: "Work Sans", cursive;
+  --body-font-family: 'Open Sans', sans-serif;
   --body-font-weight: "normal";
   --heading-font-weight: 700;
   --hero-font-weight: "bold";
@@ -24,6 +24,6 @@
 
   /* border */
   --border: 1px solid #e5e7eb;
-  --border-radius: 30px;
+  --border-radius: 3px;
   --form-border-radius: 4px;
 }

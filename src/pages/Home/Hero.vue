@@ -81,7 +81,7 @@ video {
 .hero:before {
   content: "";
   position: absolute;
-  background: rgba(0, 0, 0, 0.668);
+  background: rgba(0, 0, 0, 0.354);
   top: 0;
   right: 0;
   bottom: 0;
@@ -135,9 +135,6 @@ video {
   color: #ffffff;
   font-size: 55px;
   margin-bottom: 10px;
-  background-image: linear-gradient(50deg, #adcaff 10.67%, #c3b4ff 89.67%);
-  color: transparent;
-  background-clip: text;
   font-style: normal;
   font-weight: bold;
 }

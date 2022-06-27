@@ -37,7 +37,6 @@
 h1 {
   line-height: 1.2;
   font-size: 30px;
-  font-weight: 300;
 }
 
 .heading p {
@@ -55,7 +54,7 @@ h1 {
   height: 100%;
   padding-bottom: 1em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 10px;
   place-items: center;
 }
 

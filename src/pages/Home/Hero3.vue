@@ -60,10 +60,9 @@ video {
 .hero h1 {
   line-height: 1.2;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 70px;
   margin-bottom: 25px;
   text-align: center;
-  font-weight: 500;
 }
 
 .hero h1 span {
