@@ -16,7 +16,7 @@
             <nav>
               <ul class="nav__links">
                 <li class="dropdown">
-                  <a href="https://www.linkedin.com/company/boltcliq">Blog</a>
+                  <a target="_blank" href="https://www.linkedin.com/company/boltcliq">Blog</a>
                 </li>
                 <li class="dropdown">
                   <a href="#">Industries</a>
@@ -64,7 +64,7 @@
       <div class="overlay__content">
         <ul class="mobile__links">
           <li class="dropdown">
-            <a href="https://www.linkedin.com/company/boltcliq">Blog</a>
+            <a target="_blank" href="https://www.linkedin.com/company/boltcliq">Blog</a>
           </li>
           <li class="dropdown">
             <a href="#">Industries</a>
