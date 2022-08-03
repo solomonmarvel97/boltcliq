@@ -9,7 +9,6 @@
               style="display: flex; align-items: center; gap: 10px"
             >
               <img class="logo" src="@/assets/images/logo.png" alt="logo" />
-              <p>BOLTCLIQ</p>
             </router-link>
           </div>
           <div class="header__right">
@@ -29,12 +28,6 @@
                 </li>
                 <li class="dropdown">
                   <a href="#">Insights</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">About</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Careers</a>
                 </li>
               </ul>
             </nav>
@@ -77,12 +70,6 @@
           </li>
           <li class="dropdown">
             <a href="#">Insights</a>
-          </li>
-          <li class="dropdown">
-            <a href="#">About</a>
-          </li>
-          <li class="dropdown">
-            <a href="#">Careers</a>
           </li>
         </ul>
       </div>
@@ -135,9 +122,9 @@ export default {
 .navigation {
   position: fixed;
   top: 20px;
-  background-color: rgba(0, 0, 0, 0.583);
+  background-color: rgba(0, 0, 0, 0.305);
   z-index: 9999;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   height: 60px;
   display: grid;
   align-items: center;

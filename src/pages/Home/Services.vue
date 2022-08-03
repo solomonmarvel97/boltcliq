@@ -1,14 +1,15 @@
 <template>
-  <div class="services" style="padding-top: 2em; padding-bottom: 3em">
+  <div class="services" style="padding-top: 2em; padding-bottom: 5em">
     <section>
-      <div>
+      <div class="">
         <div v-for="(category, index) in services" :key="index">
           <div class="mt-5 mb-5">
             <div class="center">
+              <hr> <br>
               <h3 class="text-center">{{ category.title }}</h3>
             </div>
           </div>
-          <div class="container">
+          <div class="container mb-4">
             <div
               class="child"
               v-for="(i, index) in category.categories"
@@ -35,9 +36,11 @@
 }
 
 .services .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+    
 }
 
 .services .container .child {
@@ -46,7 +49,7 @@
   position: relative;
   display: grid;
   place-items: center;
-
+  flex-basis: 270px;
 }
 
 .services .container .child::before {
@@ -54,13 +57,13 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.67) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.197) 50%, rgba(0, 0, 0, 0.836) 100%);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 100;
-  border-radius: var(--border-radius);
+  border-radius: 30px;
 }
 
 
@@ -71,17 +74,17 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  border-radius: var(--border-radius);
+  border-radius: 30px;
 }
 
 
 .services .container .child h3 {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   position: absolute;
   bottom: 15%;
   z-index: 101;
-  font-weight: normal;
+  font-weight: 500;
 }
 </style>
 

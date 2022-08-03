@@ -1,66 +1,18 @@
 <template>
   <footer>
-    <section class="footer-wrapper">
-      <div class="footer-nav">
-        <div class="heading">Contact us</div>
-        <ul>
-          <a href="#">
-            <li>Industries</li>
-          </a>
-          <a href="#">
-            <li>Consulting</li>
-          </a>
-          <a href="#">
-            <li>Digital</li>
-          </a>
-          <a href="#">
-            <li>Insights</li>
-          </a>
-        </ul>
-      </div>
 
-      <div class="footer-nav">
-        <div class="heading">Useful Links</div>
-        <ul>
-          <a href="#">
-            <li>Events</li>
-          </a>
-          <a href="#">
-            <li>Partners</li>
-          </a>
-        </ul>
-      </div>
-      <div class="footer-nav">
-        <div class="heading">Work</div>
-        <ul>
-          <a href="/#FAQ"> <li>FAQ</li></a>
-          <a target="_blank" href="mailto:office@boltcliq.com">
-            <li>office@boltcliq.com</li>
-          </a>
-          <a
-            target="_blank"
-            href="https://calendly.com/boltcliq/30-minutes-free-consultation"
-          >
-            <li>Book a Meeting</li>
-          </a>
-        </ul>
-      </div>
-      <div class="footer-nav">
-        <div class="heading">Social</div>
-        <ul>
-          <a href="#">
-            <li>Twitter</li>
-          </a>
-          <a href="#">
-            <li>Facebook</li>
-          </a>
-          <a href="#">
-            <li>Linkedin</li>
-          </a>
-        </ul>
-      </div>
-    </section>
+    <div class="footer-nav">
+      <a target="_blank" href="https://twitter.com/boltcliq">
+        <img src="@/assets/icons/twitter.svg" alt="twitter">
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/company/boltcliq">
+        <img src="@/assets/icons/linkedin.svg" alt="linkedin">
+      </a>
+    </div>
+
     <div class="footer-extension">
+      <p>Made with ❤️ by <a target="_blank" href="https://solomonmarvel.com">superdeveloper</a></p>
+      <br>
       <p>Copyright @ {{ new Date().getFullYear() }}</p>
     </div>
   </footer>
@@ -80,41 +32,29 @@ export default {
 <style scoped>
 /* The footer section */
 footer {
-  padding: 4em 0;
-  background-color: #151515;
+  padding: 2em 0;
+  
 }
 
 a {
+  color: #151515;
   text-decoration: none;
 }
 
-.footer-wrapper {
+.footer-nav {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 80px;
-  row-gap: 40px;
+  gap: 30px;
 }
 
-.footer-nav {
-  flex-wrap: 100px;
-  line-height: 30px;
-}
-.footer-nav .heading {
-  margin-bottom: 1em;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.footer-nav span img {
-  width: 20px;
-}
-
-.footer-nav ul li {
-  font-weight: 300;
-  color: #fff;
-  list-style-type: none;
+.footer-nav * {
+  color: rgb(0, 0, 0);
   font-size: 12px;
+  justify-content: center;
+}
+
+.footer-nav img {
+  width: 20px;
 }
 
 @media (max-width: 768px) {
@@ -128,7 +68,7 @@ a {
 }
 
 .footer-extension {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 2em;
   font-size: 12px;

@@ -56,7 +56,7 @@ export default {
   <section>
     <div class="mt-7 mb-7">
       <div class="center">
-        <h1>Project Use Cases</h1>
+        <h1>Product Use Cases</h1>
       </div>
       <div
         class="journey mt-5 mb-5"
@@ -71,7 +71,7 @@ export default {
       </div>
     </div>
 
-    <button class="button-secondary center">View more</button>
+    <button class="button-secondary center">More Case Studies</button>
   </section>
 </template>
 
@@ -86,8 +86,7 @@ export default {
   box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.038);
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.277);
-  /* border: 1px solid rgba(0, 0, 0, 0.051); */
-  border-radius: var(--border-radius);
+  border-radius: 30px;
   min-height: 400px;
 }
 

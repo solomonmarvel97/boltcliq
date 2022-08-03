@@ -3,7 +3,7 @@
     <section>
       <div class="heading">
         <div class="center">
-          <h1 class="mb-1">Providing impactful product-led experience</h1>
+          <h1 class="mb-2">Providing impactful product-led experience</h1>
           <p>
             Successful products satisfy user needs, rely on intelligent
             technology choices, and focus on business outcomes. We help you
@@ -14,7 +14,6 @@
     </section>
     <div class="hero">
       <img class="hero-image" src="@/assets/images/design1.png" />
-      <img class="hero-image" src="@/assets/images/design2.png" />
     </div>
   </div>
 </template>
@@ -24,7 +23,7 @@
   padding-top: 3em;
   padding-bottom: 1em;
   width: 600px;
-  color: var(--white);
+  color: #151515;
   margin: 0 auto;
 }
 
@@ -34,34 +33,31 @@
   }
 }
 
-h1 {
-  line-height: 1.2;
-  font-size: 30px;
-}
+
 
 .heading p {
   line-height: 1.6;
 }
 
 .home {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  background: #151515;
+  background: #0000000e;
+  margin: 0 auto;
+  margin-top: 3em;
+  border-radius: 50px;
 }
 
 .hero {
   display: grid;
   height: 100%;
-  padding-bottom: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
+  row-gap: 10px;
   place-items: center;
 }
 
 .home .hero .hero-image {
   width: 100%;
   height: 100%;
-  top: 15%;
   object-fit: contain;
 }
 

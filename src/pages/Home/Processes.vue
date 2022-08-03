@@ -1,6 +1,6 @@
 <template>
   <section class="mt-5 mb-5">
-    <h1>Our Development Processes</h1>
+    <h1>Development Strategy</h1>
     <div class="processes">
       <div class="">
         <p>RESEARCH PROCESS</p>
@@ -70,7 +70,6 @@ p {
 
 h1 {
   font-weight: bold;
-  font-size: 40px;
   transition: all 0.2s;
   text-align: center;
   color: #151515;

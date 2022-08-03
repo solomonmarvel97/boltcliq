@@ -5,6 +5,7 @@
   <Hero3 />
   <Experience />
   <Services />
+  <Hero4 />
   <CaseStudy />
   <Contact />
 </template>
@@ -13,6 +14,7 @@
 import Hero from "./Hero";
 import Hero2 from "./Hero2";
 import Hero3 from "./Hero3";
+import Hero4 from "./Hero4";
 import Processes from "./Processes";
 import Services from "./Services";
 import Experience from "./Experience";
@@ -26,6 +28,7 @@ export default {
     Hero,
     Hero2,
     Hero3,
+    Hero4,
     Processes,
     Experience,
     Services,

@@ -37,10 +37,10 @@
                 <h4 class="bottom-text">Food Aggregation</h4>
               </a>
               <a href="https://topuniverse.org/cohort/" target="_blank">
-                <h4 class="bottom-text">Top Universe Cohort</h4>
+                <h4 class="bottom-text">Digital Education</h4>
               </a>
               <a href="https://topafrica.org" target="_blank">
-                <h4 class="bottom-text">Products Partner</h4>
+                <h4 class="bottom-text">Products Engineering</h4>
               </a>
             </div>
           </section>
@@ -116,24 +116,27 @@ video {
 }
 
 .bottom-text {
-  color: rgba(255, 255, 255, 0.505);
+  color: rgba(255, 255, 255, 0.795);
   padding: 10px;
   font-size: 15px;
   cursor: pointer;
+  font-weight: 300;
+  background-color: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.019);
 }
 
 .bottom-text:hover {
+  transition: all 1s ease-in;
   color: white;
   background-color: rgba(255, 255, 255, 0.042);
-  border-top: 0.1px solid white;
-  transition: all 0.4s ease-in-out;
+  border-top: 1px solid rgba(255, 255, 255, 0.551);
 }
 
 .hero h1 {
   line-height: 1.3;
-  width: 650px;
+  width: 850px;
   color: #ffffff;
-  font-size: 55px;
+  font-size: 65px;
   margin-bottom: 10px;
   font-style: normal;
   font-weight: bold;

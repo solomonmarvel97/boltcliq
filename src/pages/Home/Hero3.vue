@@ -63,7 +63,32 @@ video {
   font-size: 70px;
   margin-bottom: 25px;
   text-align: center;
+
+  background-image: linear-gradient(50deg, #dabeff 20.67%,#50fed6 89.67%);
+  color: transparent;
+  background-clip: text;
+  font-style: normal;
+  margin: 0 auto;
+  margin-bottom: 14px;
 }
+
+.hero h1 {
+  background-image: -webkit-linear-gradient(45.42deg,
+      #9effbd 20.67%,
+      #81bffd 100.67%);
+  -animation: effect 1s infinite linear;
+}
+
+@keyframes effect {
+  from {
+    -webkit-filter: hue-rotate(5deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 
 .hero h1 span {
   color: var(--primary);
