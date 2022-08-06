@@ -86,6 +86,12 @@
   z-index: 101;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .services .container .child {
+    flex-basis: 170px;
+  }
+}
 </style>
 
 <script>

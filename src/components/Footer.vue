@@ -10,35 +10,49 @@
       </a>
     </div>
 
-    <div class="footer-extension">
-      <p>Made with ❤️ by <a target="_blank" href="https://solomonmarvel.com">superdeveloper</a></p>
-      <br>
-      <p>Copyright @ {{ new Date().getFullYear() }}</p>
+    
+    <div class="copyright mt-5">
+      Made with ❤️ by <a href="https://solomonmarvel.com" target="_blanl">superdeveloper</a>
+    </div>
+
+    <div class="copyright mt-2">
+      copyright @ {{ new Date().getFullYear() }} All rights reserved
     </div>
   </footer>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      date: null,
-    };
-  },
-  methods: {},
-};
-</script>
-
 <style scoped>
-/* The footer section */
-footer {
-  padding: 2em 0;
-  
+.container-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.container {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(24, 24, 24);
+  border-radius: 15px;
+  padding: 40px;
 }
 
-a {
+.container h1 {
+  color: white;
+}
+.container p {
+  color: white;
+}
+
+footer .copyright {
+  display: grid;
+  place-items: center;
   color: #151515;
-  text-decoration: none;
+  font-size: 12px;
+}
+
+footer {
+  margin-bottom: 2em;
 }
 
 .footer-nav {
@@ -56,24 +70,16 @@ a {
 .footer-nav img {
   width: 20px;
 }
-
-@media (max-width: 768px) {
-  footer {
-    margin-top: 5em;
-  }
-
-  .footer-wrapper {
-    justify-content: start;
-  }
-}
-
-.footer-extension {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin-top: 2em;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-/* The footer section End */
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      date: null,
+    };
+  },
+  methods: {},
+};
+</script>
+
