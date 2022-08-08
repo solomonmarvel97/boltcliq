@@ -38,7 +38,7 @@ export default {
               Book a Session
             </button>
               <div @click="play">
-              <img src="@/assets/icons/Play.svg"/>
+              <img src="@/assets/icons/play.svg"/>
               </div>
             </div>
           </div>
