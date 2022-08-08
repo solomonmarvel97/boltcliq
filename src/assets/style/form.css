@@ -42,7 +42,7 @@ button {
 }
 
 .button-dark {
-  background: var(--black);
+  background: black;
   color: var(--white);
 }
 

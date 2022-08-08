@@ -45,7 +45,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  flex-basis: 270px;
+  flex-basis: 150px;
 }
 
 .services .container .child::before {
@@ -83,11 +83,6 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .services .container .child {
-    flex-basis: 170px;
-  }
-}
 </style>
 
 <script>

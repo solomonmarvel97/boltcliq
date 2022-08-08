@@ -2,7 +2,7 @@
   <section class="mt-5 mb-5">
     <h1>Development Strategy</h1>
     <div class="processes">
-      <div class="">
+      <div class="process">
         <p>RESEARCH PROCESS</p>
         <div class="container">
           <h1>Identify</h1>
@@ -12,7 +12,7 @@
           <h1>Report</h1>
         </div>
       </div>
-      <div class="">
+      <div class="process">
         <p>DESIGN PROCESS</p>
         <div class="container">
           <h1>Empathise</h1>
@@ -22,7 +22,7 @@
           <h1>Test</h1>
         </div>
       </div>
-      <div class="">
+      <div class="process">
         <p>ENGINEERING PROCESS</p>
         <div class="container">
           <h1>Identify</h1>
@@ -38,50 +38,32 @@
 
 <style scoped>
 .processes {
-  height: 100%;
-  margin-top: 5em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  place-items: center;
+  margin-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 20px;
 }
+
+
+.processes > div {
+  flex-basis: 300px;
+}
+
 
 p {
   font-size: 14px;
-  color: rgb(158, 158, 158);
+  color: rgb(75, 75, 75);
   text-transform: uppercase;
-  letter-spacing: 2px;
   text-align: center;
 }
 
-.processes {
-  display: grid;
-}
-
-.processes > div {
-  padding: 30px;
-  border-radius: var(--border-radius);
-}
-
-.processes .container {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-}
 
 h1 {
   font-weight: bold;
   transition: all 0.2s;
   text-align: center;
   color: #151515;
-}
-
-.processes h1:hover {
-  font-weight: bold;
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #151515;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {

@@ -66,7 +66,8 @@
 
 @media (max-width: 768px) {
   .experience h2 {
-    width: 100%;
+    width: 90%;
+    font-size: 20px;
   }
   .experience .container .child{
     border-left: 1px solid rgba(0, 0, 0, 0.089);

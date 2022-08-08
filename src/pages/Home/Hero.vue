@@ -31,7 +31,7 @@ export default {
             </p>
             <br>
             <div class="button-group">
-              <button class="button-primary" onclick="
+              <button class="button-dark" onclick="
                 window.location.href =
                   'https://calendly.com/boltcliq/30-minutes-free-consultation'
               ">
