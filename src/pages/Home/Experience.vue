@@ -31,8 +31,8 @@
 }
 
 .experience h2 {
-  width: 90%;
-  font-size: 50px;
+  width: 60%;
+  font-size: 40px;
   margin: 0 auto;
   font-weight: bold;
   text-align: center;

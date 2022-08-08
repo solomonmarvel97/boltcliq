@@ -15,16 +15,13 @@
             <nav>
               <ul class="nav__links">
                 <li class="dropdown">
-                  <a target="_blank" href="https://www.linkedin.com/company/boltcliq">Blog</a>
+                  <a target="_blank" href="https://blog.boltcliq.com">Blog</a>
                 </li>
                 <li class="dropdown">
                   <a href="#">Industries</a>
                 </li>
                 <li class="dropdown">
                   <a href="#">Consulting</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Digital</a>
                 </li>
                 <li class="dropdown">
                   <a href="#">Insights</a>
@@ -57,16 +54,13 @@
       <div class="overlay__content">
         <ul class="mobile__links">
           <li class="dropdown">
-            <a target="_blank" href="https://www.linkedin.com/company/boltcliq">Blog</a>
+            <a target="_blank" href="https://blog.boltcliq.com">Blog</a>
           </li>
           <li class="dropdown">
             <a href="#">Industries</a>
           </li>
           <li class="dropdown">
             <a href="#">Consulting</a>
-          </li>
-          <li class="dropdown">
-            <a href="#">Digital</a>
           </li>
           <li class="dropdown">
             <a href="#">Insights</a>
@@ -133,6 +127,7 @@ export default {
   margin: 0 auto;
   left: 50%;
   transform: translate(-50%, 0);
+  transition: all 1s ease;
 }
 
 @media (max-width: 768px) {
@@ -147,6 +142,7 @@ export default {
 
 .navigation:hover {
   background-color: white;
+  transition: all 1s ease;
 }
 
 .navigation:hover .nav__menu img,

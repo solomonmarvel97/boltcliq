@@ -42,7 +42,7 @@
 .home {
   width: 90%;
   height: 100%;
-  background: #0000000e;
+  background: #6565650e;
   margin: 0 auto;
   margin-top: 3em;
   border-radius: 50px;

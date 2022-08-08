@@ -35,7 +35,7 @@ let useCases = [
   },
   {
     id: 6,
-    heading: "Cohort Open Learning Solution",
+    heading: "E-learning Open Solution",
     description: `The ed-tech industry is a billion-dollar industry. We create Powerful learning solutions, learning management systems, mobile learning solutions, and school library/record keeping solutions packed with powerful features, interactive designs, and great simplicity.`,
     image: require("@/assets/images/UseCase/top_universe.png"),
   },
@@ -71,7 +71,7 @@ export default {
       </div>
     </div>
 
-    <button class="button-secondary center">More Case Studies</button>
+    <button class="button-black center">See More Case Studies</button>
   </section>
 </template>
 

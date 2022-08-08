@@ -1,6 +1,31 @@
+<script>
+export default {
+  name: "Hero_Component",
+  components: {},
+  methods: {
+    setupAnimation(e) {
+      const zoomScreen = document.getElementById("image");
+      let zoom = 1;
+      const zoomingSpeed = 0.1;
+
+      if (e.deltaY > 0) {
+        zoomScreen.style.transform = `scale(${(zoom += zoomingSpeed)})`;
+        zoomScreen.style.borderRadius ='0px'
+        
+      } else {
+        zoomScreen.style.transform = `scale(${(zoom -= zoomingSpeed)})`;
+        zoomScreen.style.borderRadius ='60px'
+      }
+    }
+  },
+};
+</script>
+
+
 <template>
   <div class="home mt-7">
-    <div class="hero">
+    <div class="hero" @wheel="setupAnimation">
+    <img src="../../assets/images/background1.jpg" id="image"/>
       <div class="container">
         <section>
           <h1>
@@ -17,11 +42,18 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../../assets/images/design.png");
-  mix-blend-mode: normal;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: none;
   position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 2s ease;
+  filter: brightness(50%); 
 }
 
 video {
@@ -29,18 +61,8 @@ video {
   height: 100%;
   display: block;
   object-fit: cover;
-  /* object-position: center center; */
 }
 
-.hero:before {
-  content: "";
-  position: absolute;
-  background: rgba(0, 0, 0, 0.668);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 
 .hero .container {
   width: 100%;
@@ -60,34 +82,13 @@ video {
 .hero h1 {
   line-height: 1.2;
   color: #ffffff;
-  font-size: 70px;
+  font-size: 50px;
   margin-bottom: 25px;
   text-align: center;
-
-  background-image: linear-gradient(50deg, #dabeff 20.67%,#50fed6 89.67%);
-  color: transparent;
-  background-clip: text;
-  font-style: normal;
   margin: 0 auto;
   margin-bottom: 14px;
 }
 
-.hero h1 {
-  background-image: -webkit-linear-gradient(45.42deg,
-      #9effbd 20.67%,
-      #81bffd 100.67%);
-  -animation: effect 1s infinite linear;
-}
-
-@keyframes effect {
-  from {
-    -webkit-filter: hue-rotate(5deg);
-  }
-
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
 
 
 .hero h1 span {
@@ -126,9 +127,4 @@ video {
 }
 </style>
 
-<script>
-export default {
-  name: "Hero_Component",
-  components: {},
-};
-</script>
+

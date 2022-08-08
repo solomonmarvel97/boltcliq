@@ -1,8 +1,24 @@
+
+<script>
+export default {
+  name: "Hero_Component",
+  components: {},
+  methods: {
+    play() {
+      document.querySelector('video').playbackRate = 0.5;
+      document.querySelector('video').play();
+
+    }
+  }
+};
+</script>
+
+
 <template>
   <div class="home">
     <div class="hero">
-      <video no-controls muted autoplay loop>
-        <source src="@/assets/images/background.mp4" type="video/mp4" />
+      <video no-controls muted loop poster="@/assets/video/poster.png">
+        <source src="@/assets/video/video.mp4" type="video/mp4" />
       </video>
 
       <div class="container">
@@ -13,24 +29,24 @@
               We create world-class digital products, web design, and branding
               that impacts people's experience
             </p>
-            <button
-              class="button-primary"
-              onclick="
+            <br>
+            <div class="button-group">
+              <button class="button-primary" onclick="
                 window.location.href =
                   'https://calendly.com/boltcliq/30-minutes-free-consultation'
-              "
-            >
+              ">
               Book a Session
             </button>
+              <div @click="play">
+              <img src="@/assets/icons/Play.svg"/>
+              </div>
+            </div>
           </div>
         </section>
         <div class="container-bottom">
           <section>
             <div class="bottom-grid">
-              <a
-                href="https://pages.topuniverse.org/message-from-our-ceo/"
-                target="_blank"
-              >
+              <a href="https://pages.topuniverse.org/message-from-our-ceo/" target="_blank">
                 <h4 class="bottom-text">The Future of Education</h4>
               </a>
               <a href="#">
@@ -51,10 +67,41 @@
 </template>
 
 <style scoped>
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  place-items: center;
+  position: relative;
+}
+
+.button-group > div img {
+  position: absolute;
+  top: 0;
+  animation: scaler 5s ease infinite;
+}
+
+/* .button-group > div img:hover {
+  
+} */
+
+@keyframes scaler {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
 .hero {
   width: 100%;
   height: 100vh;
-  background: #151515;
+  background: #000000;
   mix-blend-mode: normal;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,7 +180,7 @@ video {
 }
 
 .hero h1 {
-  line-height: 1.3;
+  line-height: 1.2;
   width: 850px;
   color: #ffffff;
   font-size: 65px;
@@ -146,6 +193,7 @@ video {
   from {
     -webkit-filter: hue-rotate(0deg);
   }
+
   to {
     -webkit-filter: hue-rotate(-360deg);
   }
@@ -158,8 +206,8 @@ video {
 
 .hero p {
   width: 600px;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 16px;
+  font-weight: 300;
   color: #ffffff;
 }
 
@@ -190,10 +238,3 @@ video {
   }
 }
 </style>
-
-<script>
-export default {
-  name: "Hero_Component",
-  components: {},
-};
-</script>

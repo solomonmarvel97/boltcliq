@@ -5,16 +5,12 @@
         <div v-for="(category, index) in services" :key="index">
           <div class="mt-5 mb-5">
             <div class="center">
-              <hr> <br>
+              <br>
               <h3 class="text-center">{{ category.title }}</h3>
             </div>
           </div>
           <div class="container mb-4">
-            <div
-              class="child"
-              v-for="(i, index) in category.categories"
-              :key="index"
-            >
+            <div class="child" v-for="(i, index) in category.categories" :key="index">
               <img :src="i.image" alt="" />
               <h3>{{ i.heading }}</h3>
             </div>
@@ -40,7 +36,7 @@
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-    
+
 }
 
 .services .container .child {
@@ -63,7 +59,7 @@
   bottom: 0;
   left: 0;
   z-index: 100;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 
@@ -74,7 +70,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 

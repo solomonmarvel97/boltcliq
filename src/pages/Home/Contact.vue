@@ -20,11 +20,11 @@
           <form>
             <div>
               <label>Email Address</label>
-              <input type="email" placeholder="whitneyblessing@gmail.com" />
+              <input type="email" placeholder="e.g johndoe@email.com" />
             </div>
             <div>
               <label>Name</label>
-              <input type="text" placeholder="whitneyblessing" />
+              <input type="text" placeholder="e.g john doe" />
             </div>
             <div>
               <label>Message</label>
@@ -79,13 +79,14 @@
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
   gap: 30px;
 }
 
 .contact-grid .child {
   width: 100%;
   object-fit: cover;
-  border-radius: var(--border-radius);
+  border-radius: 20px;
 }
 
 .contact-grid img {
