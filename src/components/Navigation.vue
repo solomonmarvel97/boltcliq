@@ -133,7 +133,6 @@ export default {
     position: fixed;
     width: 100%;
     display: grid;
-    border-radius: 0;
     top: 0;
   }
 }

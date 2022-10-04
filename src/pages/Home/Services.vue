@@ -59,7 +59,7 @@
   bottom: 0;
   left: 0;
   z-index: 100;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 
 
@@ -70,7 +70,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 
 

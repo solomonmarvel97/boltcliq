@@ -1,80 +1,100 @@
 <template>
-  <div class="mt-5 mb-5">
-    <h1>Development Strategy</h1>
-    <div class="processes">
-      <div class="process">
-        <p>RESEARCH PROCESS</p>
-        <div class="container">
-          <h1>Identify</h1>
-          <h1>Formulate</h1>
-          <h1>Review</h1>
-          <h1>Interpret</h1>
-          <h1>Report</h1>
-        </div>
-      </div>
-      <div class="process">
-        <p>DESIGN PROCESS</p>
-        <div class="container">
-          <h1>Empathise</h1>
-          <h1>Define</h1>
-          <h1>Ideate</h1>
-          <h1>Profile</h1>
-          <h1>Test</h1>
-        </div>
-      </div>
-      <div class="process">
-        <p>ENGINEERING PROCESS</p>
-        <div class="container">
-          <h1>Identify</h1>
-          <h1>Research</h1>
-          <h1>Implement</h1>
-          <h1>Test</h1>
-          <h1>Reflect</h1>
-        </div>
+  <div>
+    <div class="mb-4 mt-4">
+    <h1 class="center">Development Process</h1>
+    </div>
+  <div class="process_flex">
+    <div class="process" v-for="(i, index) in processes" :key="index" :style="{backgroundColor: i.color}">
+      <span>{{i.title}}</span>
+      <div>
+        <p v-for="(process,index) in i.processes" :key="index">{{ process }}</p>
       </div>
     </div>
   </div>
+  </div>
 </template>
-
-<style scoped>
-.processes {
-  margin-top: 4em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px 10px;
-}
-
-
-.processes > div {
-  flex-basis: 300px;
-}
-
-
-p {
-  font-size: 14px;
-  color: rgb(75, 75, 75);
-  text-transform: uppercase;
-  text-align: center;
-}
-
-
-h1 {
-  font-weight: bold;
-  transition: all 0.2s;
-  text-align: center;
-  color: #151515;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 35px;
-  }
-}
-</style>
 
 <script>
 export default {
-  name: "Processes",
-};
+  data() {
+    return {
+      processes: [
+        {
+          color: '#FF6D27',
+          title: 'design process',
+          processes: [
+              'Empathise',
+            'Define',
+            'Ideate',
+            'Profile',
+            'Test',
+          ]
+        },
+        {
+          color: '#6C35E0',
+          title: 'research process',
+          processes: [
+            'Identify',
+            'Formulate',
+            'Review',
+            'Interpret',
+            'Report',
+          ]
+        },
+        {
+          color: '#2DC3CD',
+          title: 'engineering process',
+          processes: [
+            'Identify',
+            'Research',
+            'Implement',
+            'Test',
+            'Reflect',
+          ]
+        }
+
+      ]
+    }
+  }
+}
 </script>
+
+<style scoped>
+.process_flex {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.process {
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background-color: black;
+  flex-basis: 300px;
+  border-radius: var(--border-radius);
+  gap: 30px
+}
+
+.process span {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: white
+}
+
+.process p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px; /* or 133% */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+
+</style>

@@ -45,7 +45,7 @@
   background: #6565650e;
   margin: 0 auto;
   margin-top: 3em;
-  border-radius: 50px;
+  border-radius: var(--border-radius);
 }
 
 .hero {
@@ -66,7 +66,7 @@
 }
 
 .hero .container .avatar {
-  border-radius: 50%;
+  border-radius: var(--border-radius);
   width: 50px;
   height: 50px;
   margin-right: 0.5em;
@@ -88,7 +88,7 @@
   object-fit: cover;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: var(--border-radius);
 }
 
 .hero .container .wrapper {

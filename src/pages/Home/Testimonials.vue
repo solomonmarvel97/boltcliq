@@ -53,7 +53,7 @@
   z-index: 500;
   transition: all 0.2s;
   backdrop-filter: blur(5px);
-  border-radius: 50%;
+  border-radius: var(--border-radius);
 }
 
 .horizontal-scroll-container .left-scroll:hover {
@@ -73,7 +73,7 @@
   transition: all 0.2s;
 
   backdrop-filter: blur(5px);
-  border-radius: 50%;
+  border-radius: var(--border-radius);
 }
 
 .horizontal-scroll-container .right-scroll:hover {
@@ -108,13 +108,13 @@ img {
   width: 60px;
   height: 60px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: var(--border-radius);
 }
 
 .card-text {
   padding: 30px;
   background: #ffffff;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
 }
 
 .card-text p {

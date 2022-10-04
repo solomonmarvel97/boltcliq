@@ -86,7 +86,7 @@ export default {
   box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.038);
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.277);
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   min-height: 400px;
 }
 

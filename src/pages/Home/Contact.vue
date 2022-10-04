@@ -86,7 +86,7 @@
 .contact-grid .child {
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 
 .contact-grid img {

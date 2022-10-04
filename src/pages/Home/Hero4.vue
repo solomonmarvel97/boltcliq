@@ -11,7 +11,7 @@
 .home {
   width: 90%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: var(--border-radius);
   background-color: rgba(98, 98, 98, 0.067);
   margin: 0 auto;
 }

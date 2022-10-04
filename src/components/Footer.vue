@@ -33,7 +33,7 @@
   width: 100%;
   height: 300px;
   background-color: rgb(24, 24, 24);
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   padding: 40px;
 }
 
