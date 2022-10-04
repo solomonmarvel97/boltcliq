@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-5 mb-5">
+  <div class="mt-5 mb-5">
     <h1>Development Strategy</h1>
     <div class="processes">
       <div class="process">
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <style scoped>
@@ -42,7 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 60px 20px;
+  gap: 60px 10px;
 }
 
 

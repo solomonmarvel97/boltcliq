@@ -12,6 +12,24 @@
     />
     <meta content="<%= BASE_URL %>ogimage.png" property="og:image" />
     <link href="<%= BASE_URL %>favicon.png" rel="icon" />
+
+      <script>
+          (function(d,t) {
+              var BASE_URL="https://app.chatwoot.com";
+              var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+              g.src=BASE_URL+"/packs/js/sdk.js";
+              g.defer = true;
+              g.async = true;
+              s.parentNode.insertBefore(g,s);
+              g.onload=function(){
+                  window.chatwootSDK.run({
+                      websiteToken: 'PLjmj6hfpRaWvkKn8S26Wusz',
+                      baseUrl: BASE_URL
+                  })
+              }
+          })(document,"script");
+      </script>
+
   </head>
   <body>
     <noscript>

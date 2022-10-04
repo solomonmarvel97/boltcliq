@@ -1,25 +1,69 @@
-
 <script>
-export default {
-  name: "Hero_Component",
-  components: {},
-  methods: {
-    play() {
+  let nArray = [
+  { image: "", video: require("@/assets/hero/videos/2.mp4") },
+  { image: "", video: require("@/assets/hero/videos/4.mp4") },
+  { image: "", video: require("@/assets/hero/videos/5.mp4") },
+  { image: "", video: require("@/assets/hero/videos/6.mp4") },
+  { image: "", video: require("@/assets/hero/videos/7.mp4") },
+  ]
+  
+  export default {
+    data() {
+      return {
+        nArr: nArray,
+        videoStart: 0,
+        ended: this.playNext
+      }
+    },
+    methods: {
+      play() {
       document.querySelector('video').playbackRate = 0.5;
       document.querySelector('video').play();
-
+    },
+      playVideo() {
+        console.log(this.nArr)
+        var videoPlayer = document.getElementById('videoElement');
+        
+        let random = Math.floor(Math.random() * this.nArr.length)
+        // videoPlayer.poster = this.nArr[0].image
+        videoPlayer.src = this.nArr[random].video
+        videoPlayer.playbackRate = 0.7;
+      },
+      playNext() {
+        try {
+          let i = this.videoStart + 1
+          if (i < this.nArr.length) {
+            var videoPlayer = document.getElementById('videoElement');
+            videoPlayer.poster = this.nArr[i].image
+            videoPlayer.src = this.nArr[i].video
+            this.videoStart = i
+            console.log(i)
+          } else {
+            this.videoStart = 0
+            i = this.videoStart
+            var videoPlayer = document.getElementById('videoElement');
+            videoPlayer.src = this.nArr[i].video
+          }
+        } catch (err) { }
+      },
+    },
+    mounted() {
+      this.playVideo()
+    },
+    computed: {
+  
     }
   }
-};
-</script>
+  </script>
 
 
 <template>
   <div class="home">
     <div class="hero">
-      <video no-controls muted loop poster="@/assets/video/poster.png">
+      <!-- <video no-controls muted loop poster="@/assets/video/poster.png">
         <source src="@/assets/video/video.mp4" type="video/mp4" />
-      </video>
+      </video> -->
+      <video id="videoElement" muted autoplay no-controls @ended="ended"></video>
 
       <div class="container">
         <section>
@@ -31,12 +75,12 @@ export default {
             </p>
             <br>
             <div class="button-group">
-              <button class="button-dark" onclick="window.open('https://calendly.com/boltcliq/30-minutes-free-consultation', '_blank')">
+              <button class="button-light-big" onclick="window.open('https://calendly.com/boltcliq/30-minutes-free-consultation', '_blank')">
               Book a Session
             </button>
-              <div @click="play">
+              <!-- <div @click="play">
               <img src="@/assets/icons/play.svg"/>
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
@@ -78,10 +122,6 @@ export default {
   animation: scaler 5s ease infinite;
 }
 
-/* .button-group > div img:hover {
-  
-} */
-
 @keyframes scaler {
   0%{
     transform: scale(1);
@@ -119,13 +159,12 @@ video {
   height: 100%;
   display: block;
   object-fit: cover;
-  /* object-position: center center; */
 }
 
 .hero:before {
   content: "";
   position: absolute;
-  background: rgba(0, 0, 0, 0.354);
+  background: rgba(0, 0, 0, 0.6);
   top: 0;
   right: 0;
   bottom: 0;
@@ -149,6 +188,7 @@ video {
   width: 100%;
   /* margin: 0 auto; */
 }
+
 
 .hero .container-bottom .bottom-grid {
   display: grid;
@@ -178,12 +218,12 @@ video {
 
 .hero h1 {
   line-height: 1.2;
-  width: 850px;
+  width: 550px;
   color: #ffffff;
-  font-size: 65px;
+  font-size: 50px;
   margin-bottom: 10px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 @-webkit-keyframes hue {
@@ -202,7 +242,7 @@ video {
 }
 
 .hero p {
-  width: 600px;
+  width: 450px;
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;

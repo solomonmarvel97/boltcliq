@@ -6,8 +6,7 @@ button {
   padding: 10px;
   gap: 8px;
   background: none;
-  min-width: 150px;
-  width: auto;
+
   height: 36px;
   font-size: var(--form-font-size);
   border: var(--border);
@@ -27,29 +26,36 @@ button {
 .button-primary {
   background: var(--primary);
   color: white;
-  font-size: 14px;
-  font-weight: normal;
-  border: 1px solid var(--primary);
-
 }
 
 .button-primary:hover {
-  /* background: var(--primary-tint); */
-  background: none;
-  /* border: 1px solid var(--primary); */
-  color: var(--primary);
-  transition: .2s ease-in;
+  background: var(--white);
+  color: black;
 }
 
 .button-dark {
-  background: black;
+  background: #151515;
   color: var(--white);
+}
+
+.button-dark:hover {
+  background: var(--white);
+  color: black;
 }
 
 .button-light {
   background: #fafafa;
   color: black;
 }
+
+.button-light-big {
+  background: #fafafa;
+  color: black;
+  font-size: 14px;
+  height: 38px;
+  width: 150px
+}
+
 
 /* forms */
 

@@ -11,7 +11,8 @@
   --body-font-size: 15px;
   --form-font-size: 14px;
   --heading-font-size: 22px;
-  --heading-font-family: "Work Sans", sans-serif;
+  --heading-font-family: 'Inter', sans-serif;
+  /*--heading-font-family: "Work Sans", sans-serif;*/
   --heavy-font-family: "Work Sans", cursive;
   --body-font-family: 'Open Sans', sans-serif;
   --body-font-weight: "normal";

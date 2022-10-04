@@ -115,19 +115,17 @@ export default {
 
 .navigation {
   position: fixed;
-  top: 20px;
-  background-color: rgba(0, 0, 0, 0.305);
+  background-color: rgba(0, 0, 0, 0.89);
   z-index: 9999;
   backdrop-filter: blur(3px);
   height: 60px;
   display: grid;
   align-items: center;
-  width: 90%;
-  border-radius: var(--border-radius);
+  width: 100%;
   margin: 0 auto;
   left: 50%;
   transform: translate(-50%, 0);
-  transition: all 1s ease;
+  /*transition: all 1s ease;*/
 }
 
 @media (max-width: 768px) {
