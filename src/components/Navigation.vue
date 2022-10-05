@@ -24,7 +24,7 @@
                   <a href="#">Consulting</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#">Insights</a>
+                  <a href="#">Case Studies</a>
                 </li>
               </ul>
             </nav>
@@ -34,9 +34,6 @@
           </div>
           <div class="header__right account">
             <ul class="nav__links">
-              <li class="dropdown">
-                <a href="#">Explore</a>
-              </li>
               <li class="dropdown">
                 <img
                   class="user-icon"
