@@ -1,6 +1,5 @@
 <template>
   <div class="services" style="padding-top: 2em; padding-bottom: 5em">
-    <section>
       <div class="">
         <div v-for="(category, index) in services" :key="index">
           <div class="mt-5 mb-5">
@@ -17,7 +16,6 @@
           </div>
         </div>
       </div>
-    </section>
   </div>
 </template>
 
@@ -33,19 +31,26 @@
 
 .services .container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-
+  height: 65vh;
+  transition: all .5s ease-in-out;
 }
 
 .services .container .child {
   width: 100%;
-  height: 150px;
-  position: relative;
+  height: 350px;
   display: grid;
   place-items: center;
-  flex-basis: 150px;
+  flex-basis: 200px;
+  align-items: center;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.services .container .child:hover {
+  height: 400px;
 }
 
 .services .container .child::before {
@@ -83,6 +88,28 @@
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .services .container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 65vh;
+    transition: all .5s ease-in-out;
+  }
+
+  .services .container .child {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    flex-basis: 150px;
+  }
+
+  .services .container .child:hover {
+    height: 150px;
+  }
+}
 </style>
 
 <script>
