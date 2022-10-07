@@ -288,3 +288,42 @@
 .acent-color {
   color: var(--acent) !important;
 }
+
+
+/*default flex*/
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.flex-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+/*spinner*/
+.spinner {
+  border: 3px solid white;
+  border-top: 3px solid #232323;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

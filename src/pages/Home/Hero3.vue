@@ -14,7 +14,7 @@ export default {
         
       } else {
         zoomScreen.style.transform = `scale(${(zoom -= zoomingSpeed)})`;
-        zoomScreen.style.borderRadius ='60px'
+        zoomScreen.style.borderRadius ='3px'
       }
     }
   },
@@ -25,7 +25,7 @@ export default {
 <template>
   <div class="home mt-7">
     <div class="hero" @wheel="setupAnimation">
-    <img src="../../assets/images/background1.jpg" id="image"/>
+<!--    <img src="../../assets/images/background1.jpg" id="image"/>-->
       <div class="container">
         <section>
           <h1>
@@ -45,6 +45,7 @@ export default {
   background: none;
   position: relative;
   overflow: hidden;
+  background: black;
 }
 
 .hero img {
@@ -53,7 +54,6 @@ export default {
   height: 100%;
   object-fit: cover;
   transition: all 2s ease;
-  filter: brightness(50%); 
 }
 
 video {
@@ -82,7 +82,7 @@ video {
 .hero h1 {
   line-height: 1.2;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 80px;
   margin-bottom: 25px;
   text-align: center;
   margin: 0 auto;

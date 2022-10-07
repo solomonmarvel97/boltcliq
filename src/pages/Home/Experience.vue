@@ -50,8 +50,9 @@
 .experience .container .child {
   align-items: center;
   flex-basis: 350px;
-  padding: 20px;
+  padding: 30px;
   cursor: pointer;
+  background: white;
 }
 
 

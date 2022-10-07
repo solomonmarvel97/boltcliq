@@ -1,18 +1,21 @@
 <script>
+  import Brochure from "@/components/Brochure";
   let nArray = [
-  { image: "", video: require("@/assets/hero/videos/2.mp4") },
-  { image: "", video: require("@/assets/hero/videos/4.mp4") },
-  { image: "", video: require("@/assets/hero/videos/5.mp4") },
-  { image: "", video: require("@/assets/hero/videos/6.mp4") },
-  { image: "", video: require("@/assets/hero/videos/7.mp4") },
+    { image: "", video: require("@/assets/hero/videos/2.mp4") },
+    { image: "", video: require("@/assets/hero/videos/4.mp4") },
+    { image: "", video: require("@/assets/hero/videos/5.mp4") },
+    { image: "", video: require("@/assets/hero/videos/6.mp4") },
+    { image: "", video: require("@/assets/hero/videos/7.mp4") },
   ]
   
   export default {
+    components: {Brochure},
     data() {
       return {
         nArr: nArray,
         videoStart: 0,
-        ended: this.playNext
+        ended: this.playNext,
+        quote: false
       }
     },
     methods: {
@@ -60,13 +63,10 @@
 <template>
   <div class="home">
     <div class="hero">
-      <!-- <video no-controls muted loop poster="@/assets/video/poster.png">
-        <source src="@/assets/video/video.mp4" type="video/mp4" />
-      </video> -->
       <video id="videoElement" muted autoplay no-controls @ended="ended"></video>
-
       <div class="container">
         <section>
+          <div class="brochure-flex-wrap">
           <div>
             <h1>We create innovative digital solutions.</h1>
             <p class="mb-2">
@@ -78,10 +78,14 @@
               <button class="button-light-big" onclick="window.open('https://calendly.com/boltcliq/30-minutes-free-consultation', '_blank')">
               Book a Session
             </button>
-              <!-- <div @click="play">
-              <img src="@/assets/icons/play.svg"/>
-              </div> -->
+              <button class="button-primary" @click="quote=!quote">
+                Request Quote
+              </button>
             </div>
+          </div>
+          <div class="brochure">
+            <Brochure v-if="quote"/>
+          </div>
           </div>
         </section>
         <div class="container-bottom">
@@ -108,10 +112,17 @@
 </template>
 
 <style scoped>
+.brochure-flex-wrap {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .button-group {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   place-items: center;
   position: relative;
 }
@@ -245,6 +256,7 @@ video {
   width: 450px;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.4;
   color: #ffffff;
 }
 

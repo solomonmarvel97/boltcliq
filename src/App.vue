@@ -9,7 +9,7 @@
 </style>
 
 <script>
-import Navigation from "@/components/Navigation";
+import Navigation from "@/components/Navigation/Navigation";
 import Footer from "@/components/Footer";
 export default {
   components: {
