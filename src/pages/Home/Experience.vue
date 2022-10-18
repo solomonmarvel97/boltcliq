@@ -14,10 +14,10 @@
             v-for="(i, index) in branches"
             :key="index"
           >
-            <div class="image"></div>
+            <img :src="i.icon" alt="service icon">
             <h3>{{ i.heading }}</h3>
             <p>
-              {{ i.descriptin }}
+              {{ i.description }}
             </p>
           </div>
         </div>
@@ -77,6 +77,11 @@
   line-height: 1.6;
 }
 
+.experience .container .child img {
+  height: 60px;
+  width: 60px;
+}
+
 @media (max-width: 768px) {
   .experience h2 {
     width: 90%;
@@ -91,34 +96,46 @@
 <script>
 let branches = [
   {
+    icon: require('@/assets/icons/productconsultation.svg'),
     heading: "Product Consultation",
-    descriptin:
-      "Our full-stack design and development team provides frontend development, backend development, design services, native iOS & android mobile apps, web apps, wearable apps, and (B2B)/enterprise software",
+    description: `Our full-stack design and development team provides frontend development,
+    backend development, design services, native iOS & android mobile apps, web apps,
+    wearable apps, and (B2B)/enterprise software`,
   },
   {
+    icon: require('@/assets/icons/businessconsultation.svg'),
     heading: "Business Consultation",
-    descriptin:
-      "We Undertake live projects into researching and positioning products to build  Stakeholder interviews, user research, competitor analysis, and content consolidation are all conducted by our user experience designers",
+    description: `We Undertake live projects into researching and positioning products to
+    build  Stakeholder interviews, user research, competitor analysis, and content
+    consolidation are all conducted by our user experience designers`,
   },
   {
+    icon: require('@/assets/icons/itconsultation.svg'),
     heading: "IT Consultation",
-    descriptin:
-      "Our designers experiment, create and interact. To create beautiful and functional products. We transform legacy enterprise platforms into delightful, consumer-grade experiences and develop new products people enjoy using",
+    description: `Our designers experiment, create and interact. To create beautiful and functional
+    products. We transform legacy enterprise platforms into delightful, consumer-grade experiences
+    and develop new products people enjoy using`,
   },
   {
+    icon: require('@/assets/icons/softwareengineering.svg'),
     heading: "Software Engineering",
-    descriptin:
-        "Our full-stack design and development team provides frontend development, backend development, design services, native iOS & android mobile apps, web apps, wearable apps, and (B2B)/enterprise software",
+    description: `Our full-stack design and development team provides frontend development, backend
+    development, design services, native iOS & android mobile apps, web apps, wearable apps, and
+    (B2B)/enterprise software`,
   },
   {
+    icon: require('@/assets/icons/research&development.svg'),
     heading: "Research & Development",
-    descriptin:
-        "We Undertake live projects into researching and positioning products to build  Stakeholder interviews, user research, competitor analysis, and content consolidation are all conducted by our user experience designers",
+    description: `We Undertake live projects into researching and positioning products to build  Stakeholder
+    interviews, user research, competitor analysis, and content consolidation are all conducted by our
+    user experience designers`,
   },
   {
+    icon: require('@/assets/icons/userexperiencedesign.svg'),
     heading: "User Experience Design",
-    descriptin:
-        "Our designers experiment, create and interact. To create beautiful and functional products. We transform legacy enterprise platforms into delightful, consumer-grade experiences and develop new products people enjoy using",
+    description: `Our designers experiment, create and interact. To create beautiful and functional products.
+    We transform legacy enterprise platforms into delightful, consumer-grade experiences and develop new
+    products people enjoy using`,
   },
 ];
 

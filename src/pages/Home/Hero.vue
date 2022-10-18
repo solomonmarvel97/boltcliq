@@ -88,28 +88,28 @@
           </div>
           <div class="container-bottom">
             <div class="bottom-grid">
-              <a href="#" target="_blank">
+              <a href="#">
                 <h4 class="bottom-text">IT Consultation</h4>
               </a>
-              <a href="#" target="_blank">
-                <h4 class="bottom-text">Education Industry</h4>
+              <a href="#">
+                <h4 class="bottom-text">Education</h4>
               </a>
               <a href="#">
                 <h4 class="bottom-text">Food Aggregation</h4>
               </a>
-              <a href="#" target="_blank">
+              <a href="#">
                 <h4 class="bottom-text">Retail</h4>
               </a>
-              <a href="#" target="_blank">
+              <a href="#">
                 <h4 class="bottom-text">Property Tech</h4>
               </a>
-              <a href="#" target="_blank">
-                <h4 class="bottom-text">Fintech Industry</h4>
+              <a href="#">
+                <h4 class="bottom-text">Fintech</h4>
               </a>
-              <a href="#" target="_blank">
+              <a href="#">
                 <h4 class="bottom-text">Workflow & Process Automation</h4>
               </a>
-              <a href="#" target="_blank">
+              <a href="#">
                 <h4 class="bottom-text">Business & Product Consultation</h4>
               </a>
             </div>

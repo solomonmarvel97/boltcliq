@@ -21,7 +21,8 @@ export default {
     return {
       processes: [
         {
-          color: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )',
+          // color: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )',
+          color: 'black',
           title: 'our practical design process',
           processes: [
               'Empathise',
