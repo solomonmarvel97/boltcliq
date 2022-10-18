@@ -271,8 +271,8 @@ video {
 
   .hero h1 {
     width: 100%;
-    line-height: 45px;
-    font-size: 45px;
+    line-height: 1.5;
+    font-size: 30px;
   }
 
   .hero p {
