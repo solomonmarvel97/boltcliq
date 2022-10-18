@@ -90,9 +90,10 @@
 }
 
 .dropdown span {
-  color: var(--primary) !important;
+  color: white !important;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-weight: 300 !important;
 }
 
 
@@ -111,7 +112,7 @@
 
 .dropdown_item a, p {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 30px;
   line-height: 1.2;
   color: white;

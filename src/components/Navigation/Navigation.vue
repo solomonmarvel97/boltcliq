@@ -9,6 +9,9 @@ export default {
       menuIcon: require('@/assets/images/navigationcomponent/menu.svg')
     }
   },
+  created() {
+      window.addEventListener('scroll', this.handleScroll);
+  },
   methods: {
     menu_open() {
       this.showMenu = !this.showMenu
@@ -21,6 +24,16 @@ export default {
         body.style.overflow = "auto";
         this.menuIcon = require('@/assets/images/navigationcomponent/menu.svg')
       }
+    },
+    handleScroll() {
+      let myNav = document.getElementById("nav");
+      window.onscroll = function () {
+        if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+          myNav.classList.add("scroll");
+        } else {
+          myNav.classList.remove("scroll");
+        }
+      };
     }
   }
 }
@@ -31,14 +44,21 @@ export default {
       <div class="menu">
         <div class="flex">
           <img class="menu-icon" :src='menuIcon' @click="menu_open"/>
-          <nuxt-link to="/">
-            <img  class="logo" src="@/assets/images/logo.png" alt="logo"/>
+          <nuxt-link class="logo" to="/">
+            <img src="@/assets/images/logo.png" alt="logo"/>
+            <p>BOLTCLIQ</p>
           </nuxt-link>
 
         </div>
-        <router-link to="#" class="cta">
-          See Case Studies
-        </router-link>
+        <div class="flex-wrap">
+          <div class="access">
+            <i><a href="tel: +1(579)500-8848" style="color: white; font-size: 12px">Tel: +1(579)500-8848</a></i>
+          </div>
+
+          <router-link to="#" class="cta button-primary">
+            Case Studies
+          </router-link>
+        </div>
       </div>
     </section>
     <Dropdown class="menu_dropdown" v-show="showMenu"/>
@@ -46,16 +66,19 @@ export default {
 </template>
 
 <style scoped>
-
+.scroll {
+  background-color: black;
+  transition: all 1s ease-in-out;
+}
 .cta {
   color: white;
   font-size: 14px;
+  border-radius: var(--border-radius);
 }
 
 .navigation {
   height: 60px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.75);
   position: fixed;
   z-index: 999;
   display: flex;
@@ -76,8 +99,20 @@ export default {
 }
 
 .navigation .logo {
-  height: 30px;
-  width: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navigation .logo img {
+  height: 25px;
+  width: 25px;
+}
+
+.navigation .logo p {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 
 a {
@@ -95,5 +130,11 @@ a {
   .navigation {
     background-color: black;
   }
+
+  .flex-wrap .access {
+    display: none
+  }
 }
+
+
 </style>

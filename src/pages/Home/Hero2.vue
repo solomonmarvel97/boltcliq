@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <section>
       <div class="heading">
         <div class="center">
           <h1 class="mb-2">Providing impactful product-led experience</h1>
@@ -11,19 +10,16 @@
           </p>
         </div>
       </div>
-    </section>
     <div class="hero">
-      <img class="hero-image" src="@/assets/images/design1.png" />
+      <img class="hero-image" src="@/assets/images/design2.png" />
     </div>
   </div>
 </template>
 
 <style scoped>
 .heading {
-  padding-top: 3em;
-  padding-bottom: 1em;
+  padding-top: 4em;
   width: 600px;
-  color: #151515;
   margin: 0 auto;
 }
 
@@ -40,11 +36,9 @@
 }
 
 .home {
-  width: 90%;
   height: 100%;
-  background: #6565650e;
+  background: #f8f8f8;
   margin: 0 auto;
-  margin-top: 3em;
   border-radius: var(--border-radius);
 }
 

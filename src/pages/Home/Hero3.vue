@@ -23,13 +23,13 @@ export default {
 
 
 <template>
-  <div class="home mt-7">
-    <div class="hero" @wheel="setupAnimation">
-<!--    <img src="../../assets/images/background1.jpg" id="image"/>-->
+  <div class="home">
+    <div class="hero" >
+<!--      <div class="hero" @wheel="setupAnimation">-->
       <div class="container">
         <section>
           <h1>
-            We listen, research, learn and understand before we build. Our
+            We listen, research, learn, understand and execute. Our
             processes makes us better professionals.
           </h1>
         </section>
@@ -42,10 +42,12 @@ export default {
 .hero {
   width: 100%;
   height: 100vh;
-  background: none;
   position: relative;
   overflow: hidden;
-  background: black;
+  background: url("../../assets/images/experience.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero img {
@@ -74,22 +76,13 @@ video {
   place-items: center;
 }
 
-.hero .container div {
-  display: grid;
-  place-items: center;
-}
-
 .hero h1 {
   line-height: 1.2;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 55px;
   margin-bottom: 25px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 14px;
+  width: 600px;
 }
-
-
 
 .hero h1 span {
   color: var(--primary);

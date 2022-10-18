@@ -70,8 +70,7 @@
           <div>
             <h1>We create innovative digital solutions.</h1>
             <p class="mb-2">
-              We create world-class digital products, web design, and branding
-              that impacts people's experience
+              We are a world class business consulting & digital agency delivering top-notch solutions to your individual and business needs.
             </p>
             <br>
             <div class="button-group">
@@ -91,17 +90,26 @@
         <div class="container-bottom">
           <section>
             <div class="bottom-grid">
-              <a href="https://pages.topuniverse.org/message-from-our-ceo/" target="_blank">
-                <h4 class="bottom-text">The Future of Education</h4>
+              <a href="#" target="_blank">
+                <h4 class="bottom-text">IT Consultation</h4>
+              </a>
+              <a href="#" target="_blank">
+                <h4 class="bottom-text">Education Industry</h4>
               </a>
               <a href="#">
                 <h4 class="bottom-text">Food Aggregation</h4>
               </a>
-              <a href="https://topuniverse.org/cohort/" target="_blank">
-                <h4 class="bottom-text">Digital Education</h4>
+              <a href="#" target="_blank">
+                <h4 class="bottom-text">Retail Businesses</h4>
               </a>
-              <a href="https://topafrica.org" target="_blank">
-                <h4 class="bottom-text">Products Engineering</h4>
+              <a href="#" target="_blank">
+                <h4 class="bottom-text">Property Tech</h4>
+              </a>
+              <a href="#" target="_blank">
+                <h4 class="bottom-text">Fintech Industry</h4>
+              </a>
+              <a href="#" target="_blank">
+                <h4 class="bottom-text">Business & Process Automation</h4>
               </a>
             </div>
           </section>
@@ -188,7 +196,6 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   display: grid;
   align-items: center;
 }
@@ -202,36 +209,28 @@ video {
 
 
 .hero .container-bottom .bottom-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
   gap: 10px;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 0 auto;
 }
 
 .bottom-text {
   color: rgba(255, 255, 255, 0.795);
   padding: 10px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
-  font-weight: 300;
-  background-color: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.019);
+  font-weight: 300 !important;
+  border-radius: var(--border-radius);
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
-.bottom-text:hover {
-  transition: all 1s ease-in;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.042);
-  border-top: 1px solid rgba(255, 255, 255, 0.551);
-}
 
 .hero h1 {
   line-height: 1.2;
-  width: 550px;
+  width: 600px;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 55px;
   margin-bottom: 10px;
   font-style: normal;
   font-weight: 900;
@@ -253,11 +252,11 @@ video {
 }
 
 .hero p {
-  width: 450px;
+  width: 500px;
   font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #ffffff;
+  font-weight: 400 !important;
 }
 
 .hero .player_button p {

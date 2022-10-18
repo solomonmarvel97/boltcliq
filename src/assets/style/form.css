@@ -26,6 +26,8 @@ button {
     color: white;
     width: 150px;
     height: 45px;
+    display: grid;
+    place-items: center;
 }
 
 .button-dark {
@@ -85,6 +87,8 @@ input[type="submit"] {
 
 form {
     display: grid;
+    height: 100%;
+    width: 100%;
 }
 
 form div {
@@ -112,12 +116,6 @@ form {
     background-color: var(--white);
     border-radius: var(--border-radius);
     width: 100%;
-}
-
-form > div {
-    display: grid;
-    gap: 5px;
-    margin-bottom: 15px;
 }
 
 form .input-control {

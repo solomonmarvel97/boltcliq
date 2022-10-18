@@ -1,12 +1,13 @@
 <template>
-    <div class="experience mt-5">
+    <div class="experience">
       <div class="">
-        <div class="mt-5 mb-5">
-          <h2 class="text-center">
+        <div class="mb-5">
+          <h2>
             Our leadership team brings together years of experience building
-            products for analytics, B2B software companies, Multi-tenant & SaaS products.
+            products for analytics, B2B software companies, Single Tenant & SaaS Multi-tenant products.
           </h2>
         </div>
+        <section>
         <div class="container">
           <div
             class="child"
@@ -20,19 +21,20 @@
             </p>
           </div>
         </div>
+        </section>
       </div>
     </div>
 </template>
 
 <style scoped>
 .experience {
-  margin-bottom: 3em;
+  margin-bottom: 6em;
   margin-top: 6em;
 }
 
 .experience h2 {
   width: 60%;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0 auto;
   font-weight: bold;
   text-align: center;
@@ -53,6 +55,20 @@
   padding: 30px;
   cursor: pointer;
   background: white;
+  border-radius: var(--border-radius);
+  transition: all .2s linear;
+}
+
+.experience .container .child > * {
+  color: black;
+}
+
+.experience .container .child:hover {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )
+}
+
+.experience .container .child:hover > * {
+  color: white;
 }
 
 
@@ -79,19 +95,34 @@
 <script>
 let branches = [
   {
-    heading: "Software Product Engineering",
+    heading: "Product Consultation",
     descriptin:
       "Our full-stack design and development team provides frontend development, backend development, design services, native iOS & android mobile apps, web apps, wearable apps, and (B2B)/enterprise software",
   },
   {
-    heading: "Research Development",
+    heading: "Business Consultation",
     descriptin:
       "We Undertake live projects into researching and positioning products to build  Stakeholder interviews, user research, competitor analysis, and content consolidation are all conducted by our user experience designers",
   },
   {
-    heading: "User Experience Design",
+    heading: "IT Consultation",
     descriptin:
       "Our designers experiment, create and interact. To create beautiful and functional products. We transform legacy enterprise platforms into delightful, consumer-grade experiences and develop new products people enjoy using",
+  },
+  {
+    heading: "Software Engineering",
+    descriptin:
+        "Our full-stack design and development team provides frontend development, backend development, design services, native iOS & android mobile apps, web apps, wearable apps, and (B2B)/enterprise software",
+  },
+  {
+    heading: "Research & Development",
+    descriptin:
+        "We Undertake live projects into researching and positioning products to build  Stakeholder interviews, user research, competitor analysis, and content consolidation are all conducted by our user experience designers",
+  },
+  {
+    heading: "User Experience Design",
+    descriptin:
+        "Our designers experiment, create and interact. To create beautiful and functional products. We transform legacy enterprise platforms into delightful, consumer-grade experiences and develop new products people enjoy using",
   },
 ];
 

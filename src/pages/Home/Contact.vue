@@ -18,6 +18,7 @@
         />
         <div class="child">
           <form>
+            <h2>Let's get to know you</h2>
             <div>
               <label>Email Address</label>
               <input type="email" placeholder="e.g johndoe@email.com" />
@@ -28,13 +29,12 @@
             </div>
             <div>
               <label>Message</label>
-              <textarea rows="10" style="height: 100px"></textarea>
+              <textarea rows="10" style="height: 200px"></textarea>
             </div>
-            <div>
-              <button class="button-primary wide" type="submit">
-                Submit Message
-              </button>
-            </div>
+
+            <button class="button-primary wide" type="submit">
+              Submit Message
+            </button>
           </form>
         </div>
       </div>
@@ -90,7 +90,7 @@
 }
 
 .contact-grid img {
-  height: 390px !important;
+  height: 100% !important;
 }
 </style>
 

@@ -25,32 +25,30 @@
 }
 
 .services h3 {
-  font-size: 30px;
+  font-size: 60px;
   text-align: center;
 }
 
 .services .container {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  height: 65vh;
   transition: all .5s ease-in-out;
 }
 
 .services .container .child {
   width: 100%;
-  height: 350px;
-  display: grid;
-  place-items: center;
-  flex-basis: 200px;
+  height: 150px;
+  flex-basis: 150px;
   align-items: center;
   position: relative;
   transition: all .5s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
 .services .container .child:hover {
-  height: 400px;
 }
 
 .services .container .child::before {
@@ -58,13 +56,13 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.197) 50%, rgba(0, 0, 0, 0.836) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 100;
-  border-radius: var(--border-radius);
+  border-radius: 100%;
 }
 
 
@@ -75,20 +73,23 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  border-radius: var(--border-radius);
+  border-radius: 100%;
 }
 
 
 .services .container .child h3 {
-  font-size: 16px;
+  font-size: 12px;
   color: white;
-  position: absolute;
-  bottom: 15%;
   z-index: 101;
-  font-weight: 500;
+  font-weight: 400 !important;
+  margin: 20px;
 }
 
 @media (max-width: 768px) {
+  .services h3 {
+    font-size: 30px;
+  }
+
   .services .container {
     display: flex;
     gap: 10px;
@@ -161,13 +162,13 @@ let services = [
       },
       {
         image: require("@/assets/images/Services/api.png"),
-        heading: "API Design",
+        heading: "API Development",
       },
     ],
   },
 
   {
-    title: "Marketing & Research Services",
+    title: "Marketing Services",
     categories: [
       {
         image: require("@/assets/images/Services/social.png"),
