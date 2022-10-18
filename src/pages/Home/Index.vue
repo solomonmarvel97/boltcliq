@@ -5,7 +5,6 @@
   <Experience />
   <Hero3 />
   <Services />
-<!--  <CaseStudy />-->
   <Contact />
 </template>
 

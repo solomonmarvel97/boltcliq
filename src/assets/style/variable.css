@@ -3,7 +3,7 @@
   --background: rgb(243, 243, 243);
   --white: #fff;
   --black: #222;
-  --primary: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+  --primary: rgba(0,152,155,1) ;
   --primary-tint: #444fff;
   --secondary: #222;
   /* fonts */

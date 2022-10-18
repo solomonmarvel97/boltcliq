@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <section>
       <div class="heading">
         <div class="center">
           <h1 class="mb-2">Providing impactful product-led experience</h1>
@@ -10,9 +11,17 @@
           </p>
         </div>
       </div>
+      <div class="experience mt-4">
+        <div class="child" v-for="(i, index) in process" :key="index">
+          <img class="mb-1" :src="i.icon"/>
+          <h3 class="mb-1">{{ i.heading }}</h3>
+          <p>{{ i.description }}</p>
+        </div>
+      </div>
     <div class="hero">
       <img class="hero-image" src="@/assets/images/design2.png" />
     </div>
+    </section>
   </div>
 </template>
 
@@ -22,14 +31,6 @@
   width: 600px;
   margin: 0 auto;
 }
-
-@media (max-width: 768px) {
-  .heading {
-    width: 100%;
-  }
-}
-
-
 
 .heading p {
   line-height: 1.6;
@@ -53,41 +54,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-.hero .container {
-  bottom: 15%;
-}
-
-.hero .container .avatar {
-  border-radius: var(--border-radius);
-  width: 50px;
-  height: 50px;
-  margin-right: 0.5em;
-  object-fit: cover;
-  filter: contrast(120%);
-  transition: all 0.2s;
-  margin-bottom: 15px;
-}
-
-.hero .container .container-image {
-  width: 100%;
-  object-fit: cover;
-  margin-bottom: 1em;
-  border-radius: var(--border-radius);
-  transition: all 0.5s;
-}
-
-.hero .container .container-image:hover {
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-  border-radius: var(--border-radius);
-}
-
-.hero .container .wrapper {
-  padding: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.198);
 }
 
 .hero h1 {
@@ -126,6 +92,9 @@
 }
 
 @media (max-width: 768px) {
+  .heading {
+    width: 100%;
+  }
   .home {
     height: 100%;
     padding-top: 2em;
@@ -144,11 +113,65 @@
   .hero .container > p {
   }
 }
+
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.experience .child {
+  align-items: center;
+  flex-basis: 350px;
+  padding: 25px;
+  cursor: pointer;
+  background: white;
+  border-radius: var(--border-radius);
+  transition: all .2s linear;
+}
+
+.experience .child img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.experience .child p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 </style>
 
 <script>
+let process = [
+  {
+    icon: require(`@/assets/icons/ideation.svg`),
+    heading: "Ideation",
+    description: "We cover multiple touch-points & use-cases during the brainstorming & conceptualisation stage",
+  },
+  {
+    icon: require(`@/assets/icons/implementation.svg`),
+    heading: "Implementation",
+    description: "At this level, we perform product definition, prototyping, design, development, validation, strategy and testing",
+  },
+  {
+    icon: require(`@/assets/icons/commercialisation.svg`),
+    heading: "Commercialisation",
+    description: "At this level we finalise the implementation and deploy the service or product, making it accessible by the end users",
+  },
+];
 export default {
   name: "Hero_Component",
   components: {},
+  data() {
+    return {
+      process: process
+    }
+  }
 };
 </script>

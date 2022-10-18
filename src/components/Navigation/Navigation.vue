@@ -43,11 +43,11 @@ export default {
     <section>
       <div class="menu">
         <div class="flex">
-          <img class="menu-icon" :src='menuIcon' @click="menu_open"/>
-          <nuxt-link class="logo" to="/">
+          <img alt="hamburger menu" class="menu-icon" :src='menuIcon' @click="menu_open"/>
+          <a class="logo" href="/">
             <img src="@/assets/images/logo.png" alt="logo"/>
             <p>BOLTCLIQ</p>
-          </nuxt-link>
+          </a>
 
         </div>
         <div class="flex-wrap">
@@ -56,7 +56,7 @@ export default {
           </div>
 
           <router-link to="#" class="cta button-primary">
-            Case Studies
+            Portfolio
           </router-link>
         </div>
       </div>

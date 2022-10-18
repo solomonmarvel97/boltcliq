@@ -1,11 +1,11 @@
 <script>
   import Brochure from "@/components/Brochure";
   let nArray = [
+    { image: "", video: require("@/assets/hero/videos/6.mp4") },
+    { image: "", video: require("@/assets/hero/videos/7.mp4") },
     { image: "", video: require("@/assets/hero/videos/2.mp4") },
     { image: "", video: require("@/assets/hero/videos/4.mp4") },
     { image: "", video: require("@/assets/hero/videos/5.mp4") },
-    { image: "", video: require("@/assets/hero/videos/6.mp4") },
-    { image: "", video: require("@/assets/hero/videos/7.mp4") },
   ]
   
   export default {
@@ -86,9 +86,7 @@
             <Brochure v-if="quote"/>
           </div>
           </div>
-        </section>
-        <div class="container-bottom">
-          <section>
+          <div class="container-bottom">
             <div class="bottom-grid">
               <a href="#" target="_blank">
                 <h4 class="bottom-text">IT Consultation</h4>
@@ -100,7 +98,7 @@
                 <h4 class="bottom-text">Food Aggregation</h4>
               </a>
               <a href="#" target="_blank">
-                <h4 class="bottom-text">Retail Businesses</h4>
+                <h4 class="bottom-text">Retail</h4>
               </a>
               <a href="#" target="_blank">
                 <h4 class="bottom-text">Property Tech</h4>
@@ -109,11 +107,14 @@
                 <h4 class="bottom-text">Fintech Industry</h4>
               </a>
               <a href="#" target="_blank">
-                <h4 class="bottom-text">Business & Process Automation</h4>
+                <h4 class="bottom-text">Workflow & Process Automation</h4>
+              </a>
+              <a href="#" target="_blank">
+                <h4 class="bottom-text">Business & Product Consultation</h4>
               </a>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
@@ -159,18 +160,12 @@
   height: 100vh;
   background: #000000;
   mix-blend-mode: normal;
-  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
 a {
-  all: unset;
-}
-
-section {
-  width: 85%;
-  margin: 0 auto;
+  text-decoration: none;
 }
 
 video {
@@ -202,9 +197,10 @@ video {
 
 .hero .container-bottom {
   position: absolute;
-  bottom: 30px;
-  width: 100%;
-  /* margin: 0 auto; */
+  bottom: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -271,7 +267,7 @@ video {
 
   .hero h1 {
     width: 100%;
-    line-height: 1.5;
+    line-height: 1.3;
     font-size: 30px;
   }
 

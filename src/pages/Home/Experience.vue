@@ -59,10 +59,6 @@
   transition: all .2s linear;
 }
 
-.experience .container .child > * {
-  color: black;
-}
-
 .experience .container .child:hover {
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )
 }

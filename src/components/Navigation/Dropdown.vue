@@ -90,39 +90,39 @@
 }
 
 .dropdown span {
-  color: white !important;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 300 !important;
+  font-weight: 600 !important;
+  font-size: 12px;
+  color: var(--primary) !important;
 }
 
 
 .dropdown_wrapper {
   display: flex;
-  gap: 70px;
+  gap: 100px;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+
 }
 
 .dropdown_item {
   display: grid;
   gap: 5px;
+  margin-top: 1em;
 }
 
 .dropdown_item a, p {
   text-decoration: none;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.4;
   color: white;
   transition: all 100ms ease-in;
-  padding: 3px;
 }
 
 .dropdown_item span {
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-weight: 400;
   color: #171717;
 }
 
@@ -145,7 +145,7 @@
   .dropdown_item a, p {
     text-decoration: none;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
     color: white;
     transition: all 100ms ease-in;
@@ -154,8 +154,7 @@
 }
 
 .text-big {
-  font-size: 14px !important;
-  font-weight: 500 !important;
+  font-size: 12px !important;
   text-transform: uppercase;
 }
 </style>
