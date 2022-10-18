@@ -129,19 +129,11 @@ export default {
             <div class="flex">
               <img src="@/assets/images/footercomponent/phone.svg" class="icon" alt="duration"/>
               <div class="">
-                <a target="_blank" href="tel:+2348160006890">
-                  +2348160006890 </a>
                 <a target="_blank" href="tel:+1(579)500-8848">
                   +1(579)500-8848 </a>
               </div>
             </div>
           </div>
-          <a href="#" target="_blank">
-            <div class="flex">
-              <img src="@/assets/images/footercomponent/location.svg" class="icon" alt="duration"/>
-              <p>Ikeja Lagos, Nigeria</p>
-            </div>
-          </a>
         </div>
 
         <!--legal-->

@@ -52,18 +52,11 @@
             <div>
               <div class="flex">
                 <div>
-                  <a target="_blank" href="tel:+2348160006890">
-                    +2348160006890 </a>
                   <a target="_blank" href="tel:+1(579)500-8848">
-                    +1(579)500-8848 </a>
+                    +1 (579)500-8848 </a>
                 </div>
               </div>
             </div>
-            <a href="#" target="_blank">
-              <div class="flex">
-                <p>Ikeja Lagos, Nigeria.</p>
-              </div>
-            </a>
           </div>
         </div>
       </div>

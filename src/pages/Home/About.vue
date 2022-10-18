@@ -1,15 +1,6 @@
 <template>
   <section>
     <div class="about">
-      <div class="about-container mt-5">
-        <p>
-          We work with some of the most exciting <span>brands</span> and
-          companies around. Our clients include entrepreneurs who want to
-          translate their ideas into a digital reality and big organisations who
-          want to harness our flexible, startup-like mentality.
-        </p>
-      </div>
-
       <div class="companies">
         <img
           v-for="(i, index) in companies"
@@ -70,35 +61,19 @@
 const companies = [
   {
     name: "",
-    image: require("@/assets/images/Companies/company1.png"),
+    image: require("@/assets/icons/userexperiencedesign.svg"),
   },
   {
     name: "",
-    image: require("@/assets/images/Companies/company2.png"),
+    image: require("@/assets/icons/userexperiencedesign.svg"),
   },
   {
     name: "",
-    image: require("@/assets/images/Companies/company3.png"),
+    image: require("@/assets/icons/userexperiencedesign.svg"),
   },
   {
     name: "",
-    image: require("@/assets/images/Companies/company4.png"),
-  },
-  {
-    name: "",
-    image: require("@/assets/images/Companies/company5.png"),
-  },
-  {
-    name: "",
-    image: require("@/assets/images/Companies/company6.png"),
-  },
-  {
-    name: "",
-    image: require("@/assets/images/Companies/company7.png"),
-  },
-  {
-    name: "",
-    image: require("@/assets/images/Companies/company8.png"),
+    image: require("@/assets/icons/userexperiencedesign.svg"),
   },
 ];
 export default {

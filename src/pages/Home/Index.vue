@@ -1,35 +1,34 @@
 <template>
-  <Hero />
-  <Hero2 />
-  <DevelopmentProcess />
-  <Experience />
-  <Hero3 />
-  <Services />
-  <Contact />
+  <Header/>
+  <ProductLedExperience/>
+  <BusinessPractices/>
+  <!--  <About/>-->
+  <OurExperience/>
+  <Care/>
+  <Services/>
+  <Contact/>
 </template>
 
 <script>
-import Hero from "./Hero";
-import Hero2 from "./Hero2";
-import Hero3 from "./Hero3";
-import DevelopmentProcess from "./DevelopmentProcess";
+import Header from "./Header";
+import ProductLedExperience from "./ProductLedExperience";
+import BusinessPractices from "./BusinessPractices";
+import About from "./About"
+import OurExperience from "./OurExperience";
+import Care from "./Care";
 import Services from "./Services";
-import Experience from "./Experience";
-import CaseStudy from "./CaseStudy";
-import Projects from "./Projects";
 import Contact from "./Contact";
 
 export default {
   name: "HomeView",
   components: {
-    Hero,
-    Hero2,
-    Hero3,
-    DevelopmentProcess,
-    Experience,
+    Header,
+    ProductLedExperience,
+    BusinessPractices,
+    About,
+    OurExperience,
+    Care,
     Services,
-    CaseStudy,
-    Projects,
     Contact,
   },
 };

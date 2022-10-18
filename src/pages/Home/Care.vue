@@ -29,7 +29,7 @@ export default {
       <div class="container">
         <section>
           <h1>
-            We listen, research, learn, understand and execute, and our processes makes us better professionals.
+            We listen, research, learn, understand and execute. Our processes makes us better professionals.
           </h1>
         </section>
       </div>
@@ -78,7 +78,7 @@ video {
 .hero h1 {
   line-height: 1.2;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 55px;
   margin-bottom: 25px;
   width: 650px;
 }
