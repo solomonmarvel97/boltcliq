@@ -46,7 +46,7 @@ export default {
           <img alt="hamburger menu" class="menu-icon" :src='menuIcon' @click="menu_open"/>
           <a class="logo" href="/">
             <img src="@/assets/images/logo.png" alt="logo"/>
-            <p>BOLTCLIQ</p>
+            <p>Boltcliq & Company</p>
           </a>
 
         </div>
@@ -55,9 +55,9 @@ export default {
             <i><a href="tel: +1(579)500-8848" style="color: white; font-size: 12px">Tel: +1(579)500-8848</a></i>
           </div>
 
-          <router-link to="#" class="cta button-primary">
+          <a target="_blank" href="https://blog.boltcliq.com/tag/case-studies/" class="cta button-primary">
             Portfolio
-          </router-link>
+          </a>
         </div>
       </div>
     </section>
@@ -71,8 +71,7 @@ export default {
   transition: all 1s ease-in-out;
 }
 .cta {
-  color: white;
-  font-size: 14px;
+  color: black;
   border-radius: var(--border-radius);
 }
 
@@ -105,14 +104,16 @@ export default {
 }
 
 .navigation .logo img {
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .navigation .logo p {
   color: white;
-  font-size: 10px;
-  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 a {

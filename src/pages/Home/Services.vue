@@ -11,7 +11,7 @@
           <div class="container mb-4">
             <div class="child" v-for="(i, index) in category.categories" :key="index">
               <img :src="i.image" alt="" />
-              <h3>{{ i.heading }}</h3>
+              <p>{{ i.heading }}</p>
             </div>
           </div>
         </div>
@@ -20,12 +20,9 @@
 </template>
 
 <style scoped>
-.services {
-  /* background-color: #151515; */
-}
 
 .services h3 {
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -39,8 +36,8 @@
 
 .services .container .child {
   width: 100%;
-  height: 150px;
-  flex-basis: 150px;
+  height: 200px;
+  flex-basis: 200px;
   align-items: center;
   position: relative;
   transition: all .5s ease-in-out;
@@ -77,17 +74,16 @@
 }
 
 
-.services .container .child h3 {
-  font-size: 12px;
+.services .container .child p {
   color: white;
   z-index: 101;
-  font-weight: 400 !important;
   margin: 20px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .services h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .services .container {

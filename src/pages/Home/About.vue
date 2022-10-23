@@ -25,13 +25,9 @@
 
 .about .about-container p {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 22px;
   line-height: 32px;
-}
-
-.about .about-container span {
-  font-weight: bold;
 }
 
 .about .companies {
@@ -51,8 +47,8 @@
 
 @media (max-width: 768px) {
   .about .about-container p {
-    font-size: 15px;
-  line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 </style>

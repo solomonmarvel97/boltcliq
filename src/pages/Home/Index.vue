@@ -1,5 +1,6 @@
 <template>
   <Header/>
+  <Industries/>
   <ProductLedExperience/>
   <BusinessPractices/>
   <!--  <About/>-->
@@ -18,10 +19,12 @@ import OurExperience from "./OurExperience";
 import Care from "./Care";
 import Services from "./Services";
 import Contact from "./Contact";
+import Industries from "@/pages/Home/Industries";
 
 export default {
   name: "HomeView",
   components: {
+    Industries,
     Header,
     ProductLedExperience,
     BusinessPractices,

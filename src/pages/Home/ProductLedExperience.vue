@@ -65,17 +65,14 @@
 }
 
 .hero h1:hover {
-  font-weight: bold;
   color: #151515;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   cursor: pointer;
 }
 
-.hero p {
-  font-size: 20px;
-  line-height: 32px;
-  color: #ffffff;
+p {
+  line-height: 1.6;
 }
 
 .hero .player_button {
@@ -87,9 +84,6 @@
   margin-top: 32px;
 }
 
-.hero .player_button p {
-  font-size: 16px;
-}
 
 @media (max-width: 768px) {
   .heading {
@@ -140,10 +134,6 @@
   object-fit: cover;
 }
 
-.experience .child p {
-  font-size: 14px;
-  line-height: 1.5;
-}
 
 </style>
 

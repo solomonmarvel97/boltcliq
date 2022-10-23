@@ -36,7 +36,6 @@
   width: 60%;
   font-size: 30px;
   margin: 0 auto;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -59,21 +58,12 @@
   transition: all .2s linear;
 }
 
-.experience .container .child:hover {
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )
-}
-
-.experience .container .child:hover > * {
-  color: white;
-}
-
 
 .experience .container .child * {
   margin-bottom: 20px;
 }
 
 .experience .container .child p {
-  font-size: 14px;
   line-height: 1.6;
 }
 

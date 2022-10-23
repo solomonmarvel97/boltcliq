@@ -6,7 +6,6 @@ let nArray = [
     { image: "", video: require("@/assets/hero/videos/7.mp4") },
     { image: "", video: require("@/assets/hero/videos/2.mp4") },
     { image: "", video: require("@/assets/hero/videos/4.mp4") },
-    { image: "", video: require("@/assets/hero/videos/5.mp4") },
   ]
   
   export default {
@@ -71,7 +70,7 @@ let nArray = [
           <div>
             <h1>We create innovative digital solutions.</h1>
             <p class="mb-2">
-              We are a world class business consulting & digital agency delivering top-notch solutions to your individual and business needs.
+              We are a world class business consulting & digital agency delivering top notch solutions to your individual and business needs.
             </p>
             <br>
             <div class="button-group">
@@ -86,34 +85,6 @@ let nArray = [
           <div class="brochure">
             <Brochure v-if="quote"/>
           </div>
-          </div>
-          <div class="container-bottom">
-            <div class="bottom-grid">
-              <a href="#">
-                <h4 class="bottom-text">IT Consultation</h4>
-              </a>
-              <a href="#">
-                <h4 class="bottom-text">Education</h4>
-              </a>
-              <a href="#">
-                <h4 class="bottom-text">Food Aggregation</h4>
-              </a>
-              <a href="#">
-                <h4 class="bottom-text">Retail</h4>
-              </a>
-              <a href="#">
-                <h4 class="bottom-text">Property Tech</h4>
-              </a>
-              <a href="#">
-                <h4 class="bottom-text">Fintech</h4>
-              </a>
-              <a href="#">
-                <h4 class="bottom-text">Workflow & Process Automation</h4>
-              </a>
-              <a href="#">
-                <h4 class="bottom-text">Business & Product Consultation</h4>
-              </a>
-            </div>
           </div>
         </section>
       </div>
@@ -196,41 +167,12 @@ video {
   align-items: center;
 }
 
-.hero .container-bottom {
-  position: absolute;
-  bottom: 10px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-.hero .container-bottom .bottom-grid {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.bottom-text {
-  color: rgba(255, 255, 255, 0.795);
-  padding: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 300 !important;
-  border-radius: var(--border-radius);
-  background-color: rgba(255, 255, 255, 0.07);
-}
-
-
 .hero h1 {
-  line-height: 1.2;
-  width: 600px;
+  width: 700px;
   color: #ffffff;
-  font-size: 55px;
+  font-size: 80px;
   margin-bottom: 10px;
   font-style: normal;
-  font-weight: 900;
 }
 
 @-webkit-keyframes hue {
@@ -249,16 +191,11 @@ video {
 }
 
 .hero p {
-  width: 500px;
-  font-size: 16px;
+  width: 550px;
   line-height: 1.5;
   color: #ffffff;
-  font-weight: 400 !important;
 }
 
-.hero .player_button p {
-  font-size: 16px;
-}
 
 @media (max-width: 768px) {
   .hero {
@@ -269,12 +206,11 @@ video {
   .hero h1 {
     width: 100%;
     line-height: 1.3;
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .hero p {
     width: 100%;
-    font-size: 16px;
     line-height: 1.5;
   }
 

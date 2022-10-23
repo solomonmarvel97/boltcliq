@@ -1,13 +1,8 @@
 <template>
   <section>
-    <div class="contact mt-8 mb-5">
+    <div class="contact mt-8 mb-8">
       <div class="contact-head">
         <h1 class="mb-2">Get in touch</h1>
-        <p>
-          We bring a huge wealth of experience to native application design and
-          development. We work with both established businesses and start-ups
-          looking to disrupt the market through innovative app design.
-        </p>
       </div>
 
       <div class="contact-grid">
@@ -48,7 +43,7 @@
 }
 .contact h2 {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   line-height: 33px;
   text-align: center;
@@ -56,8 +51,6 @@
 
 .contact p {
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
   line-height: 25px;
   text-align: center;
 }

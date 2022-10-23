@@ -1,7 +1,7 @@
 <template>
   <div>
   <div class="process_flex">
-    <div class="process" v-for="(i, index) in processes" :key="index" :style="{backgroundImage: i.color}">
+    <div class="process" v-for="(i, index) in processes" :key="index">
       <section>
         <div class="mb-2">
       <span>{{i.title}}</span>
@@ -21,11 +21,10 @@ export default {
     return {
       processes: [
         {
-          // color: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )',
-          color: 'black',
+          image: "url('../../assets/images/experience.jpg')",
           title: 'our practical design process',
           processes: [
-              'Empathise',
+            'Empathise',
             'Define',
             'Ideate',
             'Profile',
@@ -33,7 +32,9 @@ export default {
           ]
         },
         {
-          color: 'linear-gradient( 109.6deg,  rgba(15,2,2,1) 11.2%, rgba(36,163,190,1) 91.1% )',
+          background: 'white',
+          color: 'black',
+          image: '',
           title: 'our research workflow',
           processes: [
             'Identify',
@@ -44,7 +45,9 @@ export default {
           ]
         },
         {
-          color: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )',
+          background: '#effff8',
+          color: 'white',
+          image: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )',
           title: 'our engineering strategy',
           processes: [
             'Identify',
@@ -70,18 +73,28 @@ export default {
 
 .process {
   padding: 30px;
-  background-color: black;
   flex-basis: 300px;
   gap: 30px;
   height: 100vh;
   display: flex;
   align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.process:nth-child(1) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/1.jpg");
+}
+.process:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/2.jpg");
+}
+.process:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/3.jpg");
 }
 
 .process span {
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 18px;
   text-align: center;
   letter-spacing: 7px;
   line-height: 1.5;
@@ -89,18 +102,17 @@ export default {
 }
 
 .process .items {
-display: flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
 .process p {
   font-style: normal;
-  font-weight: 700;
   font-size: 110px;
   line-height: 1.2; /* or 133% */
-  color: #FFFFFF;
   text-align: center;
   padding: 0 30px 0 0;
+  color: white;
 }
 
 @media (max-width: 768px) {

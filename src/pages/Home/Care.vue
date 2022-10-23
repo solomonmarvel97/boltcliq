@@ -49,22 +49,6 @@ export default {
   background-size: cover;
 }
 
-.hero img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 2s ease;
-}
-
-video {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-
 .hero .container {
   width: 100%;
   height: 100%;
@@ -78,25 +62,13 @@ video {
 .hero h1 {
   line-height: 1.2;
   color: #ffffff;
-  font-size: 55px;
+  font-size: 70px;
   margin-bottom: 25px;
-  width: 650px;
+  width: 850px;
 }
 
 .hero h1 span {
   color: var(--primary);
-}
-
-.hero p {
-  width: 600px;
-  font-size: 20px;
-  line-height: 32px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.hero .player_button p {
-  font-size: 16px;
 }
 
 @media (max-width: 768px) {

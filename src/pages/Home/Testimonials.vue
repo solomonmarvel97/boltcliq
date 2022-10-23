@@ -118,14 +118,10 @@ img {
 }
 
 .card-text p {
-  font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
-.card-text h1 {
-  font-weight: normal;
-  font-size: 16px;
-}
+
 </style>
 
 <script>

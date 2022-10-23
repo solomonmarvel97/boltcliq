@@ -40,8 +40,8 @@ export default {
     <section>
       <div class="footer_newsletter">
         <div>
-          <p class="heading">Subscribe to our newsletter</p>
-          <p class="sub-heading">Sign up for a monthly digest of the latest news, articles, and resources.</p>
+          <h2 class="heading mb-1">Subscribe to our newsletter</h2>
+          <p>Sign up for a monthly digest of the latest news, articles, and resources.</p>
         </div>
         <div>
           <form @submit.prevent="subscribeToNewsletter">
@@ -69,11 +69,10 @@ export default {
         <!--      our services-->
         <div class="footer_item">
           <span>Our Services</span>
-          <a href="#">Design Services</a>
-          <a href="#">IT Consulting Services</a>
+          <a href="#">UI/UX Design</a>
+          <a href="#">Consulting</a>
           <a href="#">R&D Services</a>
-          <a href="#">Marketing Services</a>
-          <a href="#">Business Consulting</a>
+          <a href="#">Marketing</a>
         </div>
 
         <!--      real estate-->
@@ -82,8 +81,8 @@ export default {
           <a href="">Top Universe</a>
           <a href="#">Prime Learn</a>
           <a href="#">Top Africa</a>
-          <a href="#">Rossele Proptech</a>
-          <a href="#">Swiftgo Platform</a>
+          <a href="#">Rossele</a>
+          <a href="#">Swiftgo</a>
         </div>
 
         <!--      social-->
@@ -164,31 +163,20 @@ form {
 .footer_newsletter {
   display: flex;
   flex-wrap: wrap;
-  gap: 28.47px;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 56.90px;
+  margin-bottom: 60px;
 }
 
 .footer_newsletter .heading {
-  font-weight: 400;
-  font-size: 10.6766px;
-  line-height: 18px;
-  letter-spacing: 0.889714px;
-  text-transform: uppercase;
-  color: white;
-}
-
-.footer_newsletter .sub-heading {
-  font-weight: 400;
-  font-size: 14.2354px;
-  line-height: 21px;
+  font-size: 30px;
+  font-weight: 400 !important;
   color: white;
 }
 
 .footer_wrapper {
   display: flex;
-  row-gap: 28.47px;
+  row-gap: 30px;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
@@ -196,22 +184,20 @@ form {
 
 .footer_item {
   display: grid;
-  gap: 10.68px;
+  gap: 15px;
   flex-basis: 160px;
   align-items: center;
 }
 
 .footer_item a, p {
   text-decoration: none;
-  font-weight: 400;
-  font-size: 12.456px;
   line-height: 18px;
   color: white;
 }
 
 .footer_item span {
-  font-weight: 600;
-  font-size: 12.456px;
   color: white;
+  font-size: 20px;
+  padding-bottom: 1em;
 }
 </style>
