@@ -82,8 +82,8 @@ a {
 @media (max-width: 768px) {
   .industries {
     height: 100%;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   .bottom-text {
     font-size: 20px;
