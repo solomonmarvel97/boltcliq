@@ -168,9 +168,9 @@ video {
 }
 
 .hero h1 {
-  width: 700px;
+  width: 600px;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 75px;
   margin-bottom: 10px;
   font-style: normal;
 }
