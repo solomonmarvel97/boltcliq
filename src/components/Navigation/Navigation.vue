@@ -107,7 +107,7 @@ export default {
   height: 40px;
   width: 40px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .navigation .logo p {

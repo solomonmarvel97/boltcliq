@@ -3,7 +3,6 @@ import Brochure from "@/components/Brochure";
 
 let nArray = [
     { image: "", video: require("@/assets/hero/videos/6.mp4") },
-    { image: "", video: require("@/assets/hero/videos/7.mp4") },
     { image: "", video: require("@/assets/hero/videos/2.mp4") },
     { image: "", video: require("@/assets/hero/videos/4.mp4") },
   ]

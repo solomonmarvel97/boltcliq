@@ -2,23 +2,11 @@
   <div class="dropdown">
     <section>
       <div class="dropdown_container">
-        <div class="dropdown_wrapper">
-          <!-- properties -->
-          <div class="dropdown_item">
-            <a class="flex" href="#">
-              Services
-            </a>
-            <a class="flex" href="#">
-              Platforms
-            </a>
-            <a class="flex" href="#">
-              Companies
-            </a>
-            <a class="flex" href="#">
-              Contact
-            </a>
+            <div>
+            <a class="flex" href="tel: +1(579)500-8848">+1(579)500-8848</a>
+            <a class="flex" href="mailto:contact@boltciq.com">contact@boltcliq.com</a>
           </div>
-        </div>
+
       </div>
     </section>
   </div>
@@ -35,28 +23,20 @@
   padding-bottom: 4em;
 }
 
-.dropdown .dropdown_container {
+.dropdown_container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
 }
 
-
-.dropdown_wrapper {
+.dropdown_container > div {
   display: flex;
-  gap: 100px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 5em;
 }
 
-.dropdown_item {
-  display: grid;
-  gap: 20px;
-  margin-top: 1em;
-  place-items: center;
-}
-
-.dropdown_item a {
+a {
   text-decoration: none;
   font-weight: 600;
   font-size: 100px;
@@ -71,13 +51,6 @@
     font-weight: 900 !important;
   }
 }
-
-
-.dropdown_item a:hover {
-  transition: all 100ms linear;
-  font-weight: 900 !important;
-}
-
 
 /*flex overide*/
 .flex {
