@@ -6,7 +6,7 @@
       </div>
 
       <div class="contact-grid">
-        <img
+        <img loading="lazy" 
           class="child"
           src="@/assets/images/Contact/contact-image.png"
           alt=""

@@ -43,9 +43,9 @@ export default {
     <section>
       <div class="menu">
         <div class="flex">
-          <img alt="hamburger menu" class="menu-icon" :src='menuIcon' @click="menu_open"/>
+          <img loading="lazy"  alt="hamburger menu" class="menu-icon" :src='menuIcon' @click="menu_open"/>
           <a class="logo" href="/">
-            <img src="@/assets/images/logo.png" alt="logo"/>
+            <img loading="lazy"  src="@/assets/images/logo.png" alt="logo"/>
             <p>Boltcliq & Company</p>
           </a>
 

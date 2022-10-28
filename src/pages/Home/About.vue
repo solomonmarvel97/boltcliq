@@ -2,7 +2,7 @@
   <section>
     <div class="about">
       <div class="companies">
-        <img
+        <img loading="lazy" 
           v-for="(i, index) in companies"
           :key="index"
           :src="i.image"

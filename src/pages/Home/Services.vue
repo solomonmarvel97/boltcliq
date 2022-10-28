@@ -10,7 +10,7 @@
           </div>
           <div class="container mb-4">
             <div class="child" v-for="(i, index) in category.categories" :key="index">
-              <img :src="i.image" alt="" />
+              <img loading="lazy"  :src="i.image" alt="" />
               <p>{{ i.heading }}</p>
             </div>
           </div>

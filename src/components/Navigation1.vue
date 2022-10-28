@@ -8,7 +8,7 @@
               to="/"
               style="display: flex; align-items: center; gap: 10px"
             >
-              <img class="logo" src="@/assets/images/logo.png" alt="logo" />
+              <img  loading="lazy" class="logo" src="@/assets/images/logo.png" alt="logo" />
             </router-link>
           </div>
           <div class="header__right">
@@ -29,13 +29,13 @@
               </ul>
             </nav>
             <a href="#" class="nav__menu" @click="toggle">
-              <img src="@/assets/icons/menu-icon.svg" />
+              <img loading="lazy"  src="@/assets/icons/menu-icon.svg" />
             </a>
           </div>
           <div class="header__right account">
             <ul class="nav__links">
               <li class="dropdown">
-                <img
+                <img loading="lazy" 
                   class="user-icon"
                   src="@/assets/icons/user.svg"
                   alt="user"

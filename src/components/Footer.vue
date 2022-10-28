@@ -120,13 +120,13 @@ export default {
           <span>Contact</span>
           <a href="mailto:info@boltcliq.com">
             <div class="flex">
-              <img src="@/assets/images/footercomponent/mail.svg" class="icon" alt="duration"/>
+              <img  loading="lazy" src="@/assets/images/footercomponent/mail.svg" class="icon" alt="duration"/>
               <p>info@boltcliq.com</p>
             </div>
           </a>
           <div>
             <div class="flex">
-              <img src="@/assets/images/footercomponent/phone.svg" class="icon" alt="duration"/>
+              <img loading="lazy" src="@/assets/images/footercomponent/phone.svg" class="icon" alt="duration"/>
               <div class="">
                 <a target="_blank" href="tel:+1(579)500-8848">
                   +1(579)500-8848 </a>

@@ -14,7 +14,7 @@
             v-for="(i, index) in branches"
             :key="index"
           >
-            <img :src="i.icon" alt="service icon">
+            <img loading="lazy"  :src="i.icon" alt="service icon">
             <h3>{{ i.heading }}</h3>
             <p>
               {{ i.description }}

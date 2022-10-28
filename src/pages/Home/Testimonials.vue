@@ -13,7 +13,7 @@
       <div class="testimonial-container" v-for="i in 5">
         <div class="testimonial-child" >
           <div class="card-text">
-            <img
+            <img loading="lazy" 
               class="mb-1"
               src="@/assets/images/Testimonial/fega.png"
               alt=""
