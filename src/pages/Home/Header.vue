@@ -74,7 +74,7 @@ let nArray = [
             </p>
             <br>
             <div class="button-group">
-              <button class="button-light-big" onclick="window.open('https://calendly.com/boltcliq/30-minutes-free-consultation', '_blank')">
+              <button class="button-light-big" onclick="window.open('https://calendly.com/boltcliq/15-minutes-free-consultation', '_blank')">
               Book a Session
             </button>
               <button class="button-primary" @click="quote=!quote">
