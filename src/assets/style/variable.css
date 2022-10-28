@@ -20,6 +20,6 @@
   --body-line-height: 24px;
   /* border */
   --border: 1px solid #e5e7eb;
-  --border-radius: 0px;
-  --form-border-radius: 0px;
+  --border-radius: 3px;
+  --form-border-radius: 3px;
 }
