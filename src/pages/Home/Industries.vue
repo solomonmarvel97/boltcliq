@@ -41,6 +41,9 @@
               <a href="#">
                 <h4 class="bottom-text">Business Consultation</h4>
               </a>
+              <a href="#">
+                <h4 class="bottom-text">DX Consultation</h4>
+              </a>
             </div>
           </div>
         </section>
