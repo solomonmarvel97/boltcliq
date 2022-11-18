@@ -27,7 +27,7 @@ export default {
             'Empathise',
             'Define',
             'Ideate',
-            'Profile',
+            'Prototype',
             'Test',
           ]
         },
