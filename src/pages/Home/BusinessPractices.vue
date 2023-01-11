@@ -21,7 +21,6 @@ export default {
     return {
       processes: [
         {
-          image: "url('../../assets/images/experience.jpg')",
           title: 'our practical design process',
           processes: [
             'Empathise',
@@ -32,9 +31,6 @@ export default {
           ]
         },
         {
-          background: 'white',
-          color: 'black',
-          image: '',
           title: 'our research workflow',
           processes: [
             'Identify',
@@ -45,9 +41,6 @@ export default {
           ]
         },
         {
-          background: '#effff8',
-          color: 'white',
-          image: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% )',
           title: 'our engineering strategy',
           processes: [
             'Identify',
@@ -78,19 +71,20 @@ export default {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: black;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .process:nth-child(1) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/1.jpg");
+  background-color: black;
 }
 .process:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/2.jpg");
+  background-color: rgb(36, 36, 249);
 }
 .process:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/3.jpg");
+  background-color: black;
 }
 
 .process span {

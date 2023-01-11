@@ -38,7 +38,6 @@
 
 a {
   text-decoration: none;
-  font-weight: 600;
   font-size: 100px;
   line-height: 1.2;
   color: white;
@@ -48,7 +47,6 @@ a {
 @media (max-width: 768px) {
   .dropdown_item a {
     font-size: 30px;
-    font-weight: 900 !important;
   }
 }
 
@@ -70,7 +68,6 @@ a {
   }
   .dropdown_item a, p {
     text-decoration: none;
-    font-weight: 600;
     line-height: 1.2;
     color: white;
     transition: all 100ms ease-in;

@@ -76,9 +76,6 @@ let nArray = [
               <button class="button-light-big" onclick="window.open('https://calendly.com/boltcliq/15-minutes-free-consultation', '_blank')">
               Book a Session
             </button>
-              <button class="button-primary" @click="quote=!quote">
-                Request Quote
-              </button>
             </div>
           </div>
           <div class="brochure">

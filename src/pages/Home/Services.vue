@@ -36,8 +36,8 @@
 
 .services .container .child {
   width: 100%;
-  height: 200px;
-  flex-basis: 200px;
+  height: 150px;
+  flex-basis: 150px;
   align-items: center;
   position: relative;
   transition: all .5s ease-in-out;

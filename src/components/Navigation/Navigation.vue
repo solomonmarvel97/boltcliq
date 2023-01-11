@@ -71,7 +71,6 @@ export default {
   transition: all 1s ease-in-out;
 }
 .cta {
-  color: black;
   border-radius: var(--border-radius);
 }
 

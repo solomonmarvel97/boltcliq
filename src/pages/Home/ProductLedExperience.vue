@@ -11,13 +11,13 @@
           </p>
         </div>
       </div>
-      <div class="experience mt-4">
+      <!-- <div class="experience mt-4">
         <div class="child" v-for="(i, index) in process" :key="index">
           <img loading="lazy"  class="mb-1" :src="i.icon"/>
           <h3 class="mb-1">{{ i.heading }}</h3>
           <p>{{ i.description }}</p>
         </div>
-      </div>
+      </div> -->
     <div class="hero">
       <img loading="lazy"  class="hero-image" src="@/assets/images/design2.png" />
     </div>

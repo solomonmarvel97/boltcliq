@@ -3,8 +3,8 @@
   --background: rgb(243, 243, 243);
   --white: #fff;
   --black: #222;
-  --primary: rgb(1, 243, 243);
-  --primary-tint: #444fff;
+  --primary: rgb(36, 36, 249);
+  --primary-tint: rgb(36, 36, 249);
   --secondary: #222;
   /* fonts */
   --body-font-size: 16px;
@@ -15,11 +15,11 @@
   --heavy-font-family: "Inter", cursive;
   --body-font-family: 'Inter', sans-serif;
   --body-font-weight: "normal";
-  --heading-font-weight: 600;
+  --heading-font-weight: 300;
   --heading-line-height: 24px;
   --body-line-height: 24px;
   /* border */
   --border: 1px solid #e5e7eb;
-  --border-radius: 3px;
-  --form-border-radius: 3px;
+  --border-radius: 0px;
+  --form-border-radius: 0px;
 }

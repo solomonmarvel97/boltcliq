@@ -79,7 +79,6 @@ a {
   font-size: 40px;
   cursor: pointer;
   color: white;
-  font-weight: 400 !important;
 }
 
 @media (max-width: 768px) {

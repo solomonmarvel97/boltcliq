@@ -16,13 +16,12 @@ button {
 
 .button-secondary {
     background: var(--secondary);
-    color: black;
-    font-weight: normal;
+    color: white;
 }
 
 .button-primary {
     background: var(--primary);
-    color: black;
+    color: white;
     width: 150px;
     height: 45px;
     display: grid;
@@ -94,7 +93,6 @@ form div {
 
 form label {
     font-style: normal;
-    font-weight: 600;
     line-height: 20px;
     display: flex;
     align-items: center;
@@ -149,7 +147,6 @@ form select {
 
 form label {
     font-style: normal;
-    font-weight: 600;
     line-height: 18px;
     color: #111827;
 }

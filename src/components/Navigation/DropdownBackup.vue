@@ -85,7 +85,6 @@
 .dropdown span {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 600 !important;
   color: var(--primary) !important;
 }
 
@@ -106,7 +105,6 @@
 
 .dropdown_item a, p {
   text-decoration: none;
-  font-weight: 600;
   font-size: 25px;
   line-height: 1.4;
   color: white;
@@ -114,7 +112,6 @@
 }
 
 .dropdown_item span {
-  font-weight: 600;
   color: #171717;
 }
 
@@ -136,7 +133,6 @@
   }
   .dropdown_item a, p {
     text-decoration: none;
-    font-weight: 600;
     line-height: 1.2;
     color: white;
     transition: all 100ms ease-in;

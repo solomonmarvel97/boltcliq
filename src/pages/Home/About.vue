@@ -25,7 +25,6 @@
 
 .about .about-container p {
   font-style: normal;
-  font-weight: 600;
   font-size: 22px;
   line-height: 32px;
 }

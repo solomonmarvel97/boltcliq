@@ -9,7 +9,6 @@
   box-sizing: border-box;
   font-family: var(--body-font-family);
   color: black;
-  font-weight: 400 !important;
 }
 
 body {
@@ -20,7 +19,7 @@ body {
 }
 
 section {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -37,9 +36,9 @@ p {
 }
 
 h1 {
-  font-weight: bold;
   font-size: 50px;
   transition: all 0.2s;
+  letter-spacing: -0.5px;
 }
 
 @media (max-width: 768px) {
@@ -47,12 +46,14 @@ h1 {
     font-size: 35px;
   }
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  letter-spacing: -0.5px;
   font-family: var(--heading-font-family) !important;
   font-weight: var(--heading-font-weight) !important;
 }
