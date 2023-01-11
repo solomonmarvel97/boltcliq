@@ -23,18 +23,17 @@ export default {
 
 
 <template>
+  <section>
   <div class="home">
     <div class="hero" >
-<!--      <div class="hero" @wheel="setupAnimation">-->
       <div class="container">
-        <section>
           <h1>
             We listen, research, learn, understand and execute. Our processes makes us better professionals.
           </h1>
-        </section>
       </div>
     </div>
   </div>
+</section>
 </template>
 
 <style scoped>

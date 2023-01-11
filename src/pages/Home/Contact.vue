@@ -48,6 +48,7 @@
   background-image: url(@/assets/images/Contact/contact-image.png);
   height: 400px;
   background-position: center;
+  background-size: cover;
   place-items: center;
   gap: 30px;
 }
