@@ -46,7 +46,7 @@ export default {
           <img loading="lazy"  alt="hamburger menu" class="menu-icon" :src='menuIcon' @click="menu_open"/>
           <a class="logo" href="/">
             <img loading="lazy"  src="@/assets/images/logo.png" alt="logo"/>
-            <p>Boltcliq & Company</p>
+            <p>Boltcliq</p>
           </a>
 
         </div>

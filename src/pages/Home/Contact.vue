@@ -54,7 +54,7 @@
 }
 
 .contact a {
-  font-size: 35px;
+  font-size: 25px;
   color: white
 }
 </style>
