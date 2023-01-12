@@ -27,9 +27,9 @@ export default {
   <div class="home">
     <div class="hero" >
       <div class="container">
-          <h1>
+          <h2>
             We listen, research, learn, understand and execute. Our processes makes us better professionals.
-          </h1>
+          </h2>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 400px;
   position: relative;
   overflow: hidden;
   background: url("../../assets/images/experience.jpg");
@@ -58,12 +58,10 @@ export default {
   place-items: center;
 }
 
-.hero h1 {
-  line-height: 1.2;
+.hero h2 {
   color: #ffffff;
-  font-size: 70px;
-  margin-bottom: 25px;
-  width: 850px;
+  font-size: 30px;
+  width: 700px;
 }
 
 .hero h1 span {

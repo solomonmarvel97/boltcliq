@@ -68,7 +68,7 @@ export default {
   padding: 30px;
   flex-basis: 300px;
   gap: 30px;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   background-color: black;
@@ -102,7 +102,7 @@ export default {
 
 .process p {
   font-style: normal;
-  font-size: 110px;
+  font-size: 70px;
   line-height: 1.2; /* or 133% */
   text-align: center;
   padding: 0 30px 0 0;
@@ -111,7 +111,7 @@ export default {
 
 @media (max-width: 768px) {
   .process p {
-    font-size: 45px;
+    font-size: 35px;
     line-height: 1.5; /* or 133% */
     text-align: center;
   }
