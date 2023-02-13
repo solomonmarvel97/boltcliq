@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footbar">
     <section>
       <div style="display: grid; place-items:center">
         <p>Copyright © {{new Date().getFullYear()}} Boltcliq & Company</p>
@@ -9,17 +9,13 @@
 </template>
 
 <style scoped>
-form {
-  background-color: black
-}
-
-.footer {
+.footbar {
   margin-top: auto;
   width: 100%;
   padding-top: 2em;
   padding-bottom: 2em;
 }
-footer p {
+.footbar p {
   color: black
 }
 </style>
