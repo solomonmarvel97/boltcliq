@@ -39,7 +39,7 @@ export default {
   <div class="footer">
     <section>
       <div style="display: grid; place-items:center">
-        <p>Copyright © {{new Date().getFullYear()}} Boltcliq</p>
+        <p>Copyright © {{new Date().getFullYear()}} Boltcliq & Company</p>
       </div>
     </section>
   </div>

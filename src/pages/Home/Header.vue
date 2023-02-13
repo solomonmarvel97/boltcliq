@@ -1,202 +1,115 @@
 <script>
 import Brochure from "@/components/Brochure";
 
-let nArray = [
-    { image: "", video: require("@/assets/hero/videos/6.mp4") },
-    { image: "", video: require("@/assets/hero/videos/2.mp4") },
-    { image: "", video: require("@/assets/hero/videos/4.mp4") },
-  ]
-  
-  export default {
-    components: {Brochure},
-    data() {
-      return {
-        nArr: nArray,
-        videoStart: 0,
-        ended: this.playNext,
-        quote: false
-      }
-    },
-    methods: {
-      play() {
-      document.querySelector('video').playbackRate = 0.5;
-      document.querySelector('video').play();
-    },
-      playVideo() {
-        console.log(this.nArr)
-        var videoPlayer = document.getElementById('videoElement');
-        
-        let random = Math.floor(Math.random() * this.nArr.length)
-        // videoPlayer.poster = this.nArr[0].image
-        videoPlayer.src = this.nArr[random].video
-        videoPlayer.playbackRate = 0.7;
-      },
-      playNext() {
-        try {
-          let i = this.videoStart + 1
-          if (i < this.nArr.length) {
-            var videoPlayer = document.getElementById('videoElement');
-            videoPlayer.poster = this.nArr[i].image
-            videoPlayer.src = this.nArr[i].video
-            this.videoStart = i
-            console.log(i)
-          } else {
-            this.videoStart = 0
-            i = this.videoStart
-            var videoPlayer = document.getElementById('videoElement');
-            videoPlayer.src = this.nArr[i].video
-          }
-        } catch (err) { }
-      },
-    },
-    mounted() {
-      this.playVideo()
-    },
-    computed: {
-  
+export default {
+  components: { Brochure },
+  data() {
+    return {
+      quote: false
     }
-  }
-  </script>
+  },
+  methods: {
+  },
+  mounted() {
+  },
+  computed: {
 
+  }
+}
+</script>
 
 <template>
   <div class="home">
     <div class="hero">
-      <video id="videoElement" muted autoplay no-controls @ended="ended"></video>
-      <div class="container">
-        <section>
-          <div class="brochure-flex-wrap">
-          <div>
-            <h1>We create innovative digital solutions.</h1>
-            <p class="mb-2">
-              We are a world class business consulting & digital agency delivering top notch solutions to your individual and business needs.
-            </p>
-            <br>
-            <div class="button-group">
-              <button class="button-light-big" onclick="window.open('https://calendly.com/boltcliq/15-minutes-free-consultation', '_blank')">
+      <section class="brochure-flex-wrap">
+        <div>
+          <h1 class="mb-2">We create innovative digital solutions.</h1>
+          <p class="mb-2">
+            We are a world class business consulting & digital agency delivering top notch solutions to your
+            individual and business needs.
+          </p>
+          <br>
+          <div class="mt-5">
+            <button class="button-dark"
+              onclick="window.open('https://calendly.com/boltcliq/15-minutes-free-consultation', '_blank')">
               Book a Session
             </button>
-            </div>
           </div>
-          <div class="brochure">
-            <Brochure v-if="quote"/>
-          </div>
-          </div>
-        </section>
-      </div>
+        </div>
+        <div>
+          <img class="hero-image" src="@/assets/images/hero.png" alt="" />
+        </div>
+      </section>
     </div>
   </div>
 </template>
 
 <style scoped>
 .brochure-flex-wrap {
-  display: flex;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.button-group {
-  display: flex;
-  gap: 10px;
-  place-items: center;
-  position: relative;
+.brochure-flex-wrap>div {
+  flex: 1
 }
 
-.button-group > div img {
+.hero-image {
+  width: 700px;
   position: absolute;
-  top: 0;
-  animation: scaler 5s ease infinite;
+  object-fit: contain;
+  right: 0px;
+  top: 150px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.117);
 }
 
-@keyframes scaler {
-  0%{
-    transform: scale(1);
+@media (max-width: 1000px) {
+  .brochure-flex-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  50%{
-    transform: scale(1.3);
-  }
-  100%{
-    transform: scale(1);
+
+  .hero-image {
+    display: none;
   }
 }
-
 
 .hero {
   width: 100%;
   height: 100vh;
-  background: #000000;
+  background: white;
   mix-blend-mode: normal;
   background-size: cover;
-  position: relative;
+  padding: 100px 0
 }
 
 a {
   text-decoration: none;
 }
 
-video {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.hero:before {
-  content: "";
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.hero .container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: grid;
-  align-items: center;
-}
 
 .hero h1 {
-  width: 600px;
-  color: #ffffff;
+  color: black;
   font-size: 75px;
-  margin-bottom: 10px;
-  font-style: normal;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
 }
 
 .hero h1 span {
   font-family: var(--heading-font-family);
-  color: var(--primary);
 }
 
 .hero p {
   width: 550px;
   line-height: 1.5;
-  color: #ffffff;
 }
 
 
 @media (max-width: 768px) {
   .hero {
     background-position: top right;
-    height: 130vh;
+    height: 100%;
   }
 
   .hero h1 {

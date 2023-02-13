@@ -29,11 +29,10 @@ export default {
             "message": this.lead.message,
           }
         }
-        let request = await Axios.call('POST', 'leads', payload)
+        await Axios.call('POST', 'leads', payload)
         this.$toast.success("Your request was submitted successfully").goAway(7000)
         this.lead = {}
       } catch (err) {
-        // if(err.response.data.error.name=="ValidationError")
         this.$toast.error("There was an error processing your request, please try again").goAway(6000)
       } finally {
         this.disabled = !this.disabled

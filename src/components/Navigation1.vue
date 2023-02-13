@@ -163,9 +163,10 @@ ul {
 }
 
 li,
+
 a {
   color: white;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .header__container {

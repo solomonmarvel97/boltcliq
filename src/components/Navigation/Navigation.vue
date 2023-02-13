@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       showMenu: false,
-      menuIcon: require('@/assets/images/navigationcomponent/menu.svg')
+      // menuIcon: require('@/assets/images/navigationcomponent/menu.svg')
     }
   },
   created() {
@@ -18,11 +18,11 @@ export default {
       const body = document.querySelector("body");
       if (this.showMenu) {
         body.style.overflow = "hidden";
-        this.menuIcon = require('@/assets/images/navigationcomponent/close.svg')
+        // this.menuIcon = require('@/assets/images/navigationcomponent/close.svg')
       } else {
         // Enable scroll
         body.style.overflow = "auto";
-        this.menuIcon = require('@/assets/images/navigationcomponent/menu.svg')
+        // this.menuIcon = require('@/assets/images/navigationcomponent/menu.svg')
       }
     },
     handleScroll() {
@@ -39,102 +39,176 @@ export default {
 }
 </script>
 <template>
-  <div class="navigation" id="nav">
-    <section>
-      <div class="menu">
-        <div class="flex">
-          <img loading="lazy"  alt="hamburger menu" class="menu-icon" :src='menuIcon' @click="menu_open"/>
-          <a class="logo" href="/">
-            <img loading="lazy"  src="@/assets/images/logo.png" alt="logo"/>
-            <p>Boltcliq</p>
-          </a>
-
-        </div>
-        <div class="flex-wrap">
-          <div class="access">
-            <i><a href="tel: +1(579)500-8848" style="color: white; font-size: 12px">Tel: +1(579)500-8848</a></i>
-          </div>
-
-          <a target="_blank" href="https://blog.boltcliq.com/tag/case-studies/" class="cta button-primary">
-            Portfolio
-          </a>
-        </div>
+  <nav>
+      <a class="logo" href="/">
+        <img src="@/assets/images/logo.png"/>
+      </a>
+      <div class="menu" id="desktop_menu">
+        <ul>
+          <li><a href="/#products">Products</a></li>
+          <li><a href="/#services">Services</a></li>
+          <a target="_blank" class="button-dark" href="https://blog.boltcliq.com">Portfolio</a>
+        </ul>
       </div>
-    </section>
-    <Dropdown class="menu_dropdown" v-show="showMenu"/>
-  </div>
+
+      <div class="menu" id="mobile_menu" v-if="showMenu">
+        <ul class="shadow-1">
+          <li><a href="/#products">Products</a></li>
+          <li><a href="/#services">Services</a></li>
+          <a target="_blank" class="button-dark" href="https://blog.boltcliq.com">Portfolio</a>
+        </ul>
+      </div>
+
+      <div class="hamburger" @click="menu_open"></div>
+    </nav>
+    <!-- end navigation -->
+
+
 </template>
 
-<style scoped>
-.scroll {
-  background-color: black;
-  transition: all 1s ease-in-out;
-}
-.cta {
-  border-radius: var(--border-radius);
-}
+<style scoped>/* start nav */
+nav {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.066);
+    z-index: 999;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+  }
 
-.navigation {
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-}
-
-.navigation .menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  place-items: center;
-}
-
-.navigation .menu-icon {
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-}
-
-.navigation .logo {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.navigation .logo img {
-  height: 40px;
-  width: 40px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.navigation .logo p {
+  ul a {
   color: white;
-  font-size: 14px;
-  letter-spacing: 1px;
+  text-decoration: none !important;
+  padding: 10px 30px
 }
 
-a {
-  text-decoration: none;
-}
-
-.menu_dropdown {
-  position: absolute;
-  width: 100%;
-  top: 60px;
-  height: 100vh;
-}
-
-@media (max-width: 768px) {
-  .navigation {
-    background-color: black;
+  nav .logo h3 {
+    min-width: 150px;
+  }
+  
+  nav .logo img {
+    height: 25px;
+    border-radius: 5px;
+    /* max-width: 150px; */
+    object-fit: cover;
+  }
+  
+  nav .menu ul {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    place-items: center;
+    list-style: none;
+  }
+  
+  nav .menu ul li a {
+    all: unset;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+  
+  nav .menu ul li a:hover {
+    color: black;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.378);
+  }
+  
+  nav .try {
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+  }
+  
+  nav .try:hover {
+    background-color: var(--primary-tint);
+    color: white !important;
   }
 
-  .flex-wrap .access {
-    display: none
+  nav .action button {
+    padding: 16px;
+    min-width: 150px;
+    color: var(--white);
+    background-color: var(--primary-tint);
+
+    border: none;
+    cursor: pointer;
   }
-}
-
-
+  
+  nav .action button:hover {
+    background-color: var(--primary);
+    transition: 0.5s ease;
+  }
+  
+  nav .hamburger {
+    display: none;
+  }
+  
+  #mobile_menu {
+    /* display: none; */
+  }
+  
+  @media (max-width: 1000px) {
+    #desktop_menu {
+      display: none;
+    }
+  
+    nav {
+      height: 80px;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  
+    nav .menu ul {
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      gap: 0;
+      flex-direction: column;
+      z-index: 99;
+      background-color: var(--background-color);
+    }
+  
+    nav .menu ul li {
+      font-size: 14px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      place-items: center;
+      height: 50px;
+      border-bottom: 0.2px solid rgba(0, 0, 0, 0.066);
+    }
+  
+    nav .try {
+      display: block;
+    }
+  
+    nav .action {
+      display: none;
+    }
+  
+    nav .hamburger {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("@/assets/icons/menu-icon.svg");
+      background-color: var(--background-color);
+      border: none;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  .visible {
+    display: block !important;
+  }
+  
+  /* end nav */
 </style>

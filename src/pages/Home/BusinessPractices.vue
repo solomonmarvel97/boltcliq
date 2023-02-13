@@ -81,7 +81,7 @@ export default {
   background-color: black;
 }
 .process:nth-child(2) {
-  background-color: rgb(36, 36, 249);
+  background-color: rgb(7, 7, 7);
 }
 .process:nth-child(3) {
   background-color: black;
