@@ -81,7 +81,7 @@ export default {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.729), rgba(0, 0, 0, 0.729)), url(@/assets/images/1.png);
 }
 .process:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.729), rgba(0, 0, 0, 0.729)), url(@/assets/images/2.jpg);
+  background: black;
 }
 .process:nth-child(3) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.729), rgba(0, 0, 0, 0.729)), url(@/assets/images/3.jpg);

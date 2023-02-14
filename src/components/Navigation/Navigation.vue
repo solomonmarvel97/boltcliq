@@ -65,7 +65,7 @@ export default {
 
 <style scoped>/* start nav */
 nav {
-    height: 100px;
+    height: 80px;
     background-color: white;
     display: flex;
     justify-content: space-between;

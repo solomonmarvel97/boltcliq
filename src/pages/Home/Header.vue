@@ -53,15 +53,16 @@ export default {
 }
 
 .brochure-flex-wrap>div {
+  flex-basis: 300px;
   flex: 1
 }
 
 .hero-image {
-  width: 700px;
+  width: 650px;
   position: absolute;
   object-fit: contain;
   right: 0px;
-  top: 150px;
+  top: 100px;
   padding: 20px;
   border-radius: 20px 0px 0px 20px;
   border: 1px solid rgba(0, 0, 0, 0.117);
@@ -79,11 +80,12 @@ export default {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: white;
   mix-blend-mode: normal;
   background-size: cover;
-  padding: 100px 0
+  padding: 100px 0;
+  padding-bottom: 3em;
 }
 
 a {
@@ -93,7 +95,7 @@ a {
 
 .hero h1 {
   color: black;
-  font-size: 75px;
+  font-size: 70px;
 }
 
 .hero h1 span {
