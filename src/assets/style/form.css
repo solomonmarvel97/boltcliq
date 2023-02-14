@@ -3,15 +3,16 @@
 button {
     display: grid;
     place-items: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
     gap: 8px;
     background: none;
-    height: 45px;
+    height: 38px;
     font-size: var(--form-font-size);
     border: var(--border);
     border-radius: var(--border-radius);
     border: none;
     cursor: pointer;
+    border-radius: 7px !important;
 
 }
 
@@ -23,15 +24,18 @@ button {
 .button-primary {
     background: var(--primary);
     color: white;
-    width: 150px;
-    height: 45px;
+    padding: 10px 20px;
+    height: 38px;
     display: grid;
     place-items: center;
+    border-radius: 7px !important;
 }
 
 .button-dark {
+    height: 38px;
     background: black;
     color: white;
+    border-radius: 7px !important;
 }
 
 .button-dark:hover {

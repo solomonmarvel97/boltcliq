@@ -6,7 +6,6 @@ export default {
   data() {
     return {
       showMenu: false,
-      // menuIcon: require('@/assets/images/navigationcomponent/menu.svg')
     }
   },
   created() {
@@ -18,11 +17,9 @@ export default {
       const body = document.querySelector("body");
       if (this.showMenu) {
         body.style.overflow = "hidden";
-        // this.menuIcon = require('@/assets/images/navigationcomponent/close.svg')
       } else {
         // Enable scroll
         body.style.overflow = "auto";
-        // this.menuIcon = require('@/assets/images/navigationcomponent/menu.svg')
       }
     },
     handleScroll() {

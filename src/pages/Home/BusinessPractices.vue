@@ -68,7 +68,7 @@ export default {
   padding: 30px;
   flex-basis: 300px;
   gap: 30px;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   background-color: black;
@@ -78,13 +78,13 @@ export default {
 }
 
 .process:nth-child(1) {
-  background-color: black;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.729), rgba(0, 0, 0, 0.729)), url(@/assets/images/1.png);
 }
 .process:nth-child(2) {
-  background-color: rgb(7, 7, 7);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.729), rgba(0, 0, 0, 0.729)), url(@/assets/images/2.jpg);
 }
 .process:nth-child(3) {
-  background-color: black;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.729), rgba(0, 0, 0, 0.729)), url(@/assets/images/3.jpg);
 }
 
 .process span {

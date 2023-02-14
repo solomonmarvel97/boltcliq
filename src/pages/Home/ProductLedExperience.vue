@@ -11,15 +11,8 @@
           </p>
         </div>
       </div>
-      <!-- <div class="experience mt-4">
-        <div class="child" v-for="(i, index) in process" :key="index">
-          <img loading="lazy"  class="mb-1" :src="i.icon"/>
-          <h3 class="mb-1">{{ i.heading }}</h3>
-          <p>{{ i.description }}</p>
-        </div>
-      </div> -->
-    <div class="hero">
-      <img loading="lazy"  class="hero-image" src="@/assets/images/design2.png" />
+    <div class="hero mt-4">
+      <img loading="lazy"  class="hero-image" src="@/assets/images/design3.svg" />
     </div>
     </section>
   </div>
@@ -38,8 +31,8 @@
 
 .home {
   height: 100%;
-  background: #f8f8f8;
   margin: 0 auto;
+  background-color: white;
   border-radius: var(--border-radius);
 }
 
@@ -48,12 +41,16 @@
   height: 100%;
   row-gap: 10px;
   place-items: center;
+  padding-bottom: 5em;
 }
 
 .home .hero .hero-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.139);
 }
 
 .hero h1 {
