@@ -112,7 +112,7 @@
 <script>
 let services = [
   {
-    title: "Design Services",
+    title: "Design",
     categories: [
       {
         image: require("@/assets/images/Services/branding.png"),
@@ -138,7 +138,7 @@ let services = [
   },
 
   {
-    title: "Engineering Services",
+    title: "Engineering",
     categories: [
       {
         image: require("@/assets/images/Services/app.png"),
@@ -164,7 +164,7 @@ let services = [
   },
 
   {
-    title: "Marketing Services",
+    title: "Marketing",
     categories: [
       {
         image: require("@/assets/images/Services/social.png"),

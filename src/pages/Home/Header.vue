@@ -22,6 +22,9 @@ export default {
   <div class="home">
     <div class="hero">
       <section class="brochure-flex-wrap">
+        <div class="hero-image-mobile">
+          <img src="@/assets/images/hero-full.png" alt="" />
+        </div>
         <div>
           <h1 class="mb-2">We create innovative digital solutions.</h1>
           <p class="mb-2">
@@ -29,16 +32,17 @@ export default {
             individual and business needs.
           </p>
           <br>
-          <div class="mt-5">
+          <div class="mt-2">
             <button class="button-dark"
               onclick="window.open('https://calendly.com/boltcliq/15-minutes-free-consultation', '_blank')">
               Book a Session
             </button>
           </div>
         </div>
-        <div>
-          <img class="hero-image" src="@/assets/images/hero.png" alt="" />
+        <div class="hero-image">
+          <img src="@/assets/images/hero.png" alt="" />
         </div>
+
       </section>
     </div>
   </div>
@@ -57,15 +61,23 @@ export default {
   flex: 1
 }
 
-.hero-image {
+.hero-image img {
   width: 650px;
   position: absolute;
   object-fit: contain;
   right: 0px;
-  top: 100px;
+  top: 15%;
   padding: 20px;
   border-radius: 20px 0px 0px 20px;
   border: 1px solid rgba(0, 0, 0, 0.117);
+}
+
+.hero-image-mobile {
+  display: none;
+}
+.hero-image-mobile img {
+  width: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 1000px) {
@@ -73,8 +85,12 @@ export default {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  .hero-image {
+  .hero-image img {
     display: none;
+  }
+
+  .hero-image-mobile {
+    display: block;
   }
 }
 
@@ -84,8 +100,10 @@ export default {
   background: white;
   mix-blend-mode: normal;
   background-size: cover;
-  padding: 100px 0;
-  padding-bottom: 3em;
+  padding: 50px 0;
+  padding-bottom: 2em;
+  display: grid;
+  place-items: center;
 }
 
 a {
