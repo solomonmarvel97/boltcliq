@@ -38,9 +38,8 @@
 
 .business-image {
   object-fit: cover;
-  min-height: 300px;
-  max-height: 300px;
-  /* width: 350px; */
+  min-height: 250px;
+  max-height: 250px;
   border-radius: var(--border-radius);
   object-position: center;
   padding: 10px;
