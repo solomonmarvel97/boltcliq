@@ -21,13 +21,13 @@ export default {
 <template>
   <div class="home">
     <div class="hero">
-      <section class="brochure-flex-wrap">
+      <div class="brochure-flex-wrap">
         <div class="hero-image-mobile">
           <img src="https://images.unsplash.com/photo-1612832021026-375ae70f24bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2320&q=80" alt="" />
           <img src="https://images.unsplash.com/photo-1612831197310-ff5cf7a211b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" />
           <img src="https://images.unsplash.com/photo-1612831198717-1e71a0d5e2ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="" />
         </div>
-        <div>
+        <section>
           <h1 class="mb-2">We create innovative digital solutions.</h1>
           <p class="mb-2">
             We are a world class business consulting & digital agency delivering top notch solutions to your
@@ -40,12 +40,12 @@ export default {
               Book a Session
             </button>
           </div>
-        </div>
+        </section>
         <div class="hero-image">
           <img src="https://images.unsplash.com/photo-1612832021026-375ae70f24bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2320&q=80" alt="" />
         </div>
 
-      </section>
+      </div>
     </div>
   </div>
 </template>
@@ -105,10 +105,10 @@ export default {
 
   .hero-image-mobile img {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    min-height: 350px;
-    max-height: 350px;
+    width: 300px;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.092);
     padding: 10px;
     object-fit: cover;
