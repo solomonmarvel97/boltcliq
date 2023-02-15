@@ -54,7 +54,7 @@ export default {
 .brochure-flex-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
 }
 
@@ -64,12 +64,9 @@ export default {
 }
 
 .hero-image img {
-  height: 100%;
-  width: 45%;
-  position: absolute;
+  height: 100vh;
+  width: 100%;
   object-fit: cover;
-  right: 0px;
-  top: 0px;
 }
 
 .hero-image-mobile {
@@ -94,24 +91,19 @@ export default {
     width: 100%;
     place-items: center;
     display: flex;
-    gap: 50px;
+    /* gap: 50px; */
     width: 100%;
-    row-gap: 50px;
-    column-gap: 50px;
     justify-content: space-between;
     overflow: hidden;
     overflow-x: scroll;
-    padding: 2em;
   }
 
   .hero-image-mobile img {
-    border-radius: 50%;
-    width: 320px;
-    height: 320px;
-    min-height: 320px;
-    max-height: 320px;
-    border: 1px solid rgba(0, 0, 0, 0.092);
-    padding: 5px;
+    /* border-radius: 50%; */
+    width: 100%;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
     object-fit: cover;
     place-items: center;
   }
@@ -119,12 +111,10 @@ export default {
 
 .hero {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: white;
   mix-blend-mode: normal;
   background-size: cover;
-  padding: 50px 0;
-  padding-bottom: 2em;
   display: grid;
   place-items: center;
 }
