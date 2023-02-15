@@ -23,7 +23,9 @@ export default {
     <div class="hero">
       <section class="brochure-flex-wrap">
         <div class="hero-image-mobile">
-          <img src="@/assets/images/hero-full.png" alt="" />
+          <img src="https://images.unsplash.com/photo-1612832021026-375ae70f24bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2320&q=80" alt="" />
+          <img src="https://images.unsplash.com/photo-1612831197310-ff5cf7a211b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" />
+          <img src="https://images.unsplash.com/photo-1612831198717-1e71a0d5e2ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="" />
         </div>
         <div>
           <h1 class="mb-2">We create innovative digital solutions.</h1>
@@ -40,7 +42,7 @@ export default {
           </div>
         </div>
         <div class="hero-image">
-          <img src="@/assets/images/hero.png" alt="" />
+          <img src="https://images.unsplash.com/photo-1612832021026-375ae70f24bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2320&q=80" alt="" />
         </div>
 
       </section>
@@ -62,14 +64,12 @@ export default {
 }
 
 .hero-image img {
-  width: 650px;
+  height: 100%;
+  width: 45%;
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   right: 0px;
-  top: 15%;
-  padding: 20px;
-  border-radius: 10px 0px 0px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.117);
+  top: 0px;
 }
 
 .hero-image-mobile {
@@ -90,7 +90,29 @@ export default {
   }
 
   .hero-image-mobile {
-    display: block;
+    /* display: grid; */
+    width: 100%;
+    place-items: center;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    row-gap: 50px;
+    column-gap: 50px;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .hero-image-mobile img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    min-height: 350px;
+    max-height: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    padding: 10px;
+    object-fit: cover;
+    place-items: center;
   }
 }
 
