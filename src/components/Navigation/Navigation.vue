@@ -44,7 +44,7 @@ export default {
         <ul>
           <li><a href="/#products">Products</a></li>
           <li><a href="/#services">Services</a></li>
-          <a target="_blank" class="button-dark" href="https://blog.boltcliq.com">Portfolio</a>
+          <li><a target="_blank" href="https://blog.boltcliq.com">Portfolio</a></li>
         </ul>
       </div>
 
@@ -52,7 +52,7 @@ export default {
         <ul class="shadow-1">
           <li><a href="/#products">Products</a></li>
           <li><a href="/#services">Services</a></li>
-          <a target="_blank" class="button-dark" href="https://blog.boltcliq.com">Portfolio</a>
+          <li><a target="_blank" href="https://blog.boltcliq.com">Portfolio</a></li>
         </ul>
       </div>
 

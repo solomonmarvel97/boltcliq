@@ -3,10 +3,10 @@
 button {
     display: grid;
     place-items: center;
-    padding: 10px 20px;
+    padding: 10px 30px;
     gap: 8px;
     background: none;
-    height: 38px;
+    height: 48px;
     font-size: var(--form-font-size);
     border: var(--border);
     border-radius: var(--border-radius);
@@ -22,18 +22,16 @@ button {
 .button-primary {
     background: var(--primary);
     color: white;
-    padding: 10px 20px;
-    height: 38px;
+    padding: 10px 30px;
+    height: 48px;
     display: grid;
     place-items: center;
-    border-radius: 7px !important;
 }
 
 .button-dark {
-    height: 38px;
+    height: 48px;
     background: black;
     color: white;
-    border-radius: 7px !important;
 }
 
 .button-dark:hover {
