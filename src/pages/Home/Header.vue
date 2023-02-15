@@ -101,16 +101,17 @@ export default {
     justify-content: space-between;
     overflow: hidden;
     overflow-x: scroll;
+    padding: 2em;
   }
 
   .hero-image-mobile img {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    min-height: 300px;
-    max-height: 300px;
+    width: 320px;
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
     border: 1px solid rgba(0, 0, 0, 0.092);
-    padding: 10px;
+    padding: 5px;
     object-fit: cover;
     place-items: center;
   }
