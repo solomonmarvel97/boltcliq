@@ -2,9 +2,9 @@
   <Header/>
   <Industries/>
   <ProductLedExperience/>
+  <BasicPortfolio/>
   <BusinessPractices/>
   <!--  <About/>-->
-  <OurExperience/>
   <Care/>
   <Services/>
   <Contact/>
@@ -15,11 +15,11 @@ import Header from "./Header";
 import ProductLedExperience from "./ProductLedExperience";
 import BusinessPractices from "./BusinessPractices";
 import About from "./About"
-import OurExperience from "./OurExperience";
 import Care from "./Care";
 import Services from "./Services";
 import Contact from "./Contact";
 import Industries from "@/pages/Home/Industries";
+import BasicPortfolio from "./basic-portfolio.vue";
 
 export default {
   name: "HomeView",
@@ -29,10 +29,10 @@ export default {
     ProductLedExperience,
     BusinessPractices,
     About,
-    OurExperience,
     Care,
     Services,
     Contact,
-  },
+    BasicPortfolio
+},
 };
 </script>

@@ -51,7 +51,7 @@
   background-size: cover;
   place-items: center;
   gap: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .contact a {

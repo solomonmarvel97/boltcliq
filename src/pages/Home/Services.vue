@@ -22,7 +22,7 @@
 <style scoped>
 
 .services h3 {
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -83,7 +83,7 @@
 
 @media (max-width: 768px) {
   .services h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .services .container {
@@ -112,7 +112,7 @@
 <script>
 let services = [
   {
-    title: "Design",
+    title: "Design Services",
     categories: [
       {
         image: require("@/assets/images/Services/branding.png"),
@@ -138,7 +138,7 @@ let services = [
   },
 
   {
-    title: "Engineering",
+    title: "Engineering Services",
     categories: [
       {
         image: require("@/assets/images/Services/app.png"),
@@ -164,7 +164,7 @@ let services = [
   },
 
   {
-    title: "Marketing",
+    title: "Marketing Services",
     categories: [
       {
         image: require("@/assets/images/Services/social.png"),

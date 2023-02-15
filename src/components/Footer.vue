@@ -2,7 +2,7 @@
   <div class="footbar">
     <section>
       <div style="display: grid; place-items:center">
-        <p>Copyright © {{new Date().getFullYear()}} Boltcliq & Company</p>
+        <p>Copyright © {{new Date().getFullYear()}} All Rights Reserved</p>
       </div>
     </section>
   </div>

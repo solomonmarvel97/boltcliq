@@ -68,7 +68,7 @@ export default {
   right: 0px;
   top: 15%;
   padding: 20px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 10px 0px 0px 10px;
   border: 1px solid rgba(0, 0, 0, 0.117);
 }
 

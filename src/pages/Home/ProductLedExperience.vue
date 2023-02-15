@@ -49,7 +49,7 @@
   height: 100%;
   object-fit: contain;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.139);
 }
 
